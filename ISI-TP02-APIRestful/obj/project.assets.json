@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
+      "projectUniqueName": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
       "projectName": "ISI-TP02-APIRestful",
-      "projectPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
+      "projectPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
       "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\ISI-TP02-APIRestful\\obj\\",
+      "outputPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
