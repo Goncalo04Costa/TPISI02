@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\tipofuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\OneDrive\\Ambiente de Trabalho\\ISI-TP02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "TipoMedico.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\TipoMedico.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\TipoMedico.cs",
@@ -90,12 +90,11 @@
               "RelativeToolTip": "App_Code\\Models\\TipoMedico.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:50.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:50.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Medico.cs",
@@ -103,12 +102,11 @@
               "RelativeToolTip": "App_Code\\Models\\Medico.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:30.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:30.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Hospital.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Hospital.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Hospital.cs",
@@ -116,12 +114,11 @@
               "RelativeToolTip": "App_Code\\Models\\Hospital.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:16.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:16.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "TipoUtente.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\TipoUtente.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\TipoUtente.cs",
@@ -129,12 +126,11 @@
               "RelativeToolTip": "App_Code\\Models\\TipoUtente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:40:12.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:40:12.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Utente.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Utente.cs",
@@ -147,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Consulta.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Consulta.cs",
@@ -155,12 +151,11 @@
               "RelativeToolTip": "App_Code\\Models\\Consulta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:33:51.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:33:51.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "TipoFuncionario.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\TipoFuncionario.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\TipoFuncionario.cs",
@@ -168,12 +163,11 @@
               "RelativeToolTip": "App_Code\\Models\\TipoFuncionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:33:00.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:33:00.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Funcionario.cs",
@@ -185,38 +179,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "IHospitalService.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeToolTip": "App_Code\\IHospitalService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAswCUAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA/wBQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:26:04.195Z"
+              "WhenOpened": "2024-12-14T15:26:04.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Service.svc",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
               "RelativeDocumentMoniker": "Service.svc",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
               "RelativeToolTip": "Service.svc",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
               "WhenOpened": "2024-12-14T15:11:42.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "HospitalService.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeToolTip": "App_Code\\HospitalService.cs",
-              "ViewState": "AQIAAGYBAAAAAAAAAAAqwIABAAAiAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAmwPgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T14:12:31.152Z",
               "EditorCaption": ""
@@ -235,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Funcionario.cs",
@@ -247,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Consulta.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Consulta.cs",

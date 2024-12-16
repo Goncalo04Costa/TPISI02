@@ -75,6 +75,7 @@
   <ItemGroup>
     <Content Include="Services\HospitalService.asmx" />
     <Content Include="Web.config" />
+    <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Consulta.cs" />
@@ -88,6 +89,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HospitalService.asmx.cs">
       <DependentUpon>HospitalService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

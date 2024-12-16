@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zFomogC2WmI=",
+  "dgSpecHash": "gDVBVV86m4k=",
   "success": true,
   "projectFilePath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
   "expectedPackageFiles": [
@@ -14,10 +14,11 @@
     "C:\\Users\\gonca\\.nuget\\packages\\microsoft.identitymodel.xml\\6.8.0\\microsoft.identitymodel.xml.6.8.0.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\gonca\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\gonca\\.nuget\\packages\\microsoft.openapi\\1.6.22\\microsoft.openapi.1.6.22.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
-    "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
-    "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\7.2.0\\swashbuckle.aspnetcore.annotations.7.2.0.nupkg.sha512",
+    "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\7.2.0\\swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
+    "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\7.2.0\\swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\gonca\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",

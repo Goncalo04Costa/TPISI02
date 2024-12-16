@@ -11,27 +11,17 @@ public interface IHospitalService
     List<Funcionario> GetAllFuncionarios();
     [OperationContract]
     Funcionario GetFuncionarioById(int id);
-    [OperationContract]
-    bool CreateFuncionario(string nome, int nif, DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt);
-    [OperationContract]
-    void UpdateFuncionario(int id, string nome, int nif, DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt);
-    [OperationContract]
-    bool DeleteFuncionario(int id);
 
     // Utente Methods
     [OperationContract]
     List<Utente> GetAllUtentes();
     [OperationContract]
-    bool CreateUtente(string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId);
-    //bool UpdateUtente(int id, string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId);
-    [OperationContract]
-    bool DeleteUtente(int id);
+    List<Utente> GetUtentesById();
 
     // Medico Methods
     [OperationContract]
     List<Medico> GetAllMedicos();
     [OperationContract]
-    bool CreateMedico(string nome, int tipoMedicoId);
-    [OperationContract]
-    bool DeleteMedico(int id);
+    List<Medico> GetMedicoById();
+
 }
