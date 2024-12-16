@@ -19,7 +19,6 @@ namespace ISI_TP02_ASMX
     public class HospitalService : System.Web.Services.WebService
     {
 
-        // String de Conexão (colocada em um local único para reutilização)
         private readonly string connectionString = "Server=tcp:gestaohospitalar.database.windows.net,1433;Initial Catalog=ISItp02;Persist Security Info=False;User ID=TP-ISI;Password=Goncalo18_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private SqlConnection db = new SqlConnection();
         public HospitalService()
@@ -209,6 +208,177 @@ namespace ISI_TP02_ASMX
             catch (Exception ex)
             {
                 throw new ApplicationException("Error deleting Funcionário.", ex);
+            }
+        }
+
+
+        [WebMethod]
+        public List<Utente> GetAllUtentes()
+        {
+            var utentes = new List<Utente>();
+            string query = "SELECT Id, Nome, NIF, DataEntrada, TipoUtenteId, HospitalId FROM Utente";
+
+            try
+            {
+                using (var connection = GetConnection())
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(query, connection))
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            utentes.Add(new Utente
+                            {
+                                Id = reader.GetInt32(0),
+                                Nome = reader.GetString(1),
+                                NIF = reader.GetInt32(2),
+                                DataEntrada = reader.GetDateTime(3),
+                                TipoUtenteId = reader.GetInt32(4),
+                                HospitalId = reader.GetInt32(5)
+                            });
+                        }
+                    }
+                }
+                return utentes;
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException($"Database error: {sqlEx.Message}", sqlEx);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving Utente data.", ex);
+            }
+        }
+
+        [WebMethod]
+        public Utente GetUtenteById(int id)
+        {
+            Utente utente = null;
+            string query = "SELECT Id, Nome, NIF, DataEntrada, TipoUtenteId, HospitalId FROM Utente WHERE Id = @Id";
+
+            try
+            {
+                using (var connection = GetConnection())
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                utente = new Utente
+                                {
+                                    Id = reader.GetInt32(0),
+                                    Nome = reader.GetString(1),
+                                    NIF = reader.GetInt32(2),
+                                    DataEntrada = reader.GetDateTime(3),
+                                    TipoUtenteId = reader.GetInt32(4),
+                                    HospitalId = reader.GetInt32(5)
+                                };
+                            }
+                        }
+                    }
+                }
+                return utente;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving Utente data.", ex);
+            }
+        }
+
+        [WebMethod]
+        public bool CreateUtente(string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            string query = "INSERT INTO Utente (Nome, NIF, DataEntrada, TipoUtenteId, HospitalId) " +
+                           "VALUES (@Nome, @NIF, @DataEntrada, @TipoUtenteId, @HospitalId)";
+
+            try
+            {
+                using (var connection = GetConnection())
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
+                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
+                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
+                        command.Parameters.Add("@TipoUtenteId", System.Data.SqlDbType.Int).Value = tipoUtenteId;
+                        command.Parameters.Add("@HospitalId", System.Data.SqlDbType.Int).Value = hospitalId;
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error creating Utente.", ex);
+            }
+        }
+
+        [WebMethod]
+        public void UpdateUtente(int id, string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            string query = "UPDATE Utente SET Nome = @Nome, NIF = @NIF, DataEntrada = @DataEntrada, " +
+                           "TipoUtenteId = @TipoUtenteId, HospitalId = @HospitalId WHERE Id = @Id";
+
+            try
+            {
+                using (var connection = GetConnection())
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
+                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
+                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
+                        command.Parameters.Add("@TipoUtenteId", System.Data.SqlDbType.Int).Value = tipoUtenteId;
+                        command.Parameters.Add("@HospitalId", System.Data.SqlDbType.Int).Value = hospitalId;
+                        command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error updating Utente.", ex);
+            }
+        }
+
+        [WebMethod]
+        public bool DeleteUtente(int id)
+        {
+            string query = "DELETE FROM Utente WHERE Id = @Id";
+
+            try
+            {
+                using (var connection = GetConnection())
+                {
+                    connection.Open();
+
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error deleting Utente.", ex);
             }
         }
     }
