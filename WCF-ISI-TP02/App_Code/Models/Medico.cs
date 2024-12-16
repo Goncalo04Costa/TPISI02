@@ -5,11 +5,10 @@ namespace ISITP02.Models
 {
     public class Medico
     {
-        public int Id { get; set; } // Primary Key
+        public int Id { get; set; } 
         public string Nome { get; set; }
-        public int TipoMedicoId { get; set; } // Foreign Key
-        public TipoMedico TipoMedico { get; set; } // Navigation Property
+        public TipoMedico TipoMedico { get; set; } 
 
-        public List<Consulta> Consultas { get; set; } // Navigation Property
+        public List<Consulta> Consultas { get; set; }
     }
 }

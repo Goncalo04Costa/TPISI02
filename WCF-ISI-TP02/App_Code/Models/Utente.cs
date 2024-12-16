@@ -11,9 +11,7 @@ namespace ISITP02.Models
         public string Nome { get; set; }
         public int NIF { get; set; } // Unique
         public DateTime DataEntrada { get; set; }
-        public int TipoUtenteId { get; set; } // Foreign Key
         public TipoUtente TipoUtente { get; set; } // Navigation Property
-        public int HospitalId { get; set; } // Foreign Key
         public Hospital Hospital { get; set; } // Navigation Property
 
         public List<Consulta> Consultas { get; set; } // Navigation Property

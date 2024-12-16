@@ -12,11 +12,9 @@ namespace ISITP02.Models
         public DateTime DataEntrada { get; set; }
         public int Contacto { get; set; }
         public string Password { get; set; } // Unique
-        public int TipoFuncionarioId { get; set; } // Foreign Key
         public TipoFuncionario TipoFuncionario { get; set; } // Navigation Property
-        public string JWT { get; set; }
-
-        public ICollection<Consulta> Consultas { get; set; } // Navigation Property
+      
+        public List<Consulta> Consultas { get; set; } // Navigation Property
     }
 
 
