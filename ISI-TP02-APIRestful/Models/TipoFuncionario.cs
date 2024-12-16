@@ -7,7 +7,6 @@ namespace ISITP02.Models
     {
         public int Id { get; set; } // Primary Key
         public string Descricao { get; set; }
-
         public List<Funcionario> Funcionarios { get; set; } // Navigation Property
     }
 }

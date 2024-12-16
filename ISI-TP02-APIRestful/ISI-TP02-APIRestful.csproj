@@ -17,9 +17,4 @@
     <PackageReference Include="System.ServiceModel.Security" Version="6.0.*" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Connected Services\" />
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

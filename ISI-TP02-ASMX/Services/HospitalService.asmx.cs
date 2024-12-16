@@ -1,19 +1,31 @@
-﻿using System;
+﻿using ISITP02.Models;
+using System;
 using System.Collections.Generic;
-using System.Web.Services;
 using System.Data.SqlClient;
-using ISITP02.Models;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
 
-namespace ISI_TP02_ASMX.Services
+namespace ISI_TP02_ASMX
 {
+    /// <summary>
+    /// Descrição resumida de HospitalService
+    /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    public class HospitalService : WebService
+    // Para permitir que esse serviço da web seja chamado a partir do script, usando ASP.NET AJAX, remova os comentários da linha a seguir. 
+    // [System.Web.Script.Services.ScriptService]
+    public class HospitalService : System.Web.Services.WebService
     {
+
         // String de Conexão (colocada em um local único para reutilização)
         private readonly string connectionString = "Server=tcp:gestaohospitalar.database.windows.net,1433;Initial Catalog=ISItp02;Persist Security Info=False;User ID=TP-ISI;Password=Goncalo18_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
+        private SqlConnection db = new SqlConnection();
+        public HospitalService()
+        {
+            db.ConnectionString = connectionString;
+        }
         private SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
@@ -200,4 +212,4 @@ namespace ISI_TP02_ASMX.Services
             }
         }
     }
-}  
+}
