@@ -16,7 +16,7 @@ namespace ISI_TP02_APIRestful.Controllers
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
         }
         [HttpDelete("delete")]
-        public async Task<IActionResult> delete(int id)
+        public async Task<IActionResult> delete(int id) 
         {
             var request = await asmxClient.DeleteFuncionarioAsync(id);
             if (request)
