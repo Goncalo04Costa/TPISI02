@@ -36,4 +36,31 @@ public interface IHospitalService
 
     [OperationContract]
     Hospital GetHospitalByLoc(string localização);
+
+    [OperationContract]
+    bool createConsulta(int UtenteId, int FuncionarioId, int hospitalId,int medicoId, DateTime data, TimeSpan hora, string descricao);
+
+    [OperationContract]
+    List<Consulta> GetAllConsultas();
+
+    [OperationContract]
+    bool deleteConsulta(int id);
+
+    [OperationContract]
+    bool UpdateConsulta(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao);
+
+    [OperationContract]
+    Consulta ConsultaById(int id);  //metodo retorna apenas um objeto 
+
+    [OperationContract]
+    List<Consulta> ConsultaByHospital(int hospitalId); //retorna multiplos resultados -hospital-varias consultas
+
+    [OperationContract]
+    List<Consulta> ConsultaByUtente(int utenteId);
+
+    [OperationContract]
+    List<Consulta> ConsultaByFuncionario(int funcionarioId);
+
+
+
 }
