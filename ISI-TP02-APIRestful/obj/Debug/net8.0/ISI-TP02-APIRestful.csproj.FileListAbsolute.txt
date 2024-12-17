@@ -226,3 +226,4 @@ C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\obj\Debug\
 C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\obj\Debug\net8.0\ISI-TP02-APIRestful.genruntimeconfig.cache
 C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\obj\Debug\net8.0\ref\ISI-TP02-APIRestful.dll
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Connected Services\AsmxService\ConnectedService.json
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Connected Services\WCFHospitalService\ConnectedService.json

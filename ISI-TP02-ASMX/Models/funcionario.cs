@@ -13,7 +13,6 @@ namespace ISITP02.Models
         public int Contacto { get; set; }
         public string Password { get; set; }
         public int TipoFuncionárioid { get; set; }
-        public string JWT { get; set; }
     }
 }
 

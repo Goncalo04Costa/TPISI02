@@ -1,6 +1,7 @@
 ﻿using ISITP02.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -35,7 +36,7 @@ namespace ISI_TP02_ASMX
         {
             var funcionarios = new List<Funcionario>();
             string query = "SELECT f.Id, f.Nome, f.NIF, f.DataEntrada, f.Contacto, f.Password, " +
-                           "f.TipoFuncionárioid, t.Descricao AS TipoFuncionarioDescricao, f.JWT " +
+                           "f.TipoFuncionárioid, t.Descricao AS TipoFuncionarioDescricao " +
                            "FROM Funcionário f " +
                            "INNER JOIN TipoFuncionário t ON f.TipoFuncionárioid = t.Id";
 
@@ -59,7 +60,6 @@ namespace ISI_TP02_ASMX
                                 Contacto = reader.GetInt32(4),
                                 Password = reader.GetString(5),
                                 TipoFuncionárioid = reader.GetInt32(6),
-                                JWT = reader.GetString(7)
                             });
                         }
                     }
@@ -80,7 +80,7 @@ namespace ISI_TP02_ASMX
         public Funcionario GetFuncionarioById(int id)
         {
             Funcionario funcionario = null;
-            string query = "SELECT Id, Nome, NIF, DataEntrada, Contacto, Password, TipoFuncionárioid, JWT " +
+            string query = "SELECT Id, Nome, NIF, DataEntrada, Contacto, Password, TipoFuncionárioid " +
                            "FROM Funcionário WHERE Id = @Id";
 
             try
@@ -106,7 +106,6 @@ namespace ISI_TP02_ASMX
                                     Contacto = reader.GetInt32(4),
                                     Password = reader.GetString(5),
                                     TipoFuncionárioid = reader.GetInt32(6),
-                                    JWT = reader.GetString(7)
                                 };
                             }
                         }
@@ -121,10 +120,10 @@ namespace ISI_TP02_ASMX
         }
 
         [WebMethod]
-        public bool CreateFuncionario(string nome, int nif, DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public bool CreateFuncionario(Funcionario funcionario)
         {
-            string query = "INSERT INTO Funcionário (Nome, NIF, DataEntrada, Contacto, Password, TipoFuncionárioid, JWT) " +
-                           "VALUES (@Nome, @NIF, @DataEntrada, @Contacto, @Password, @TipoFuncionárioid, @JWT)";
+            string query = "INSERT INTO Funcionário (Nome, NIF, DataEntrada, Contacto, Password, TipoFuncionárioid ) " +
+                           "VALUES (@Nome, @NIF, @DataEntrada, @Contacto, @Password, @TipoFuncionárioid)";
 
             try
             {
@@ -134,14 +133,12 @@ namespace ISI_TP02_ASMX
 
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
-                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
-                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
-                        command.Parameters.Add("@Contacto", System.Data.SqlDbType.Int).Value = contacto;
-                        command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 100).Value = password;
-                        command.Parameters.Add("@TipoFuncionárioid", System.Data.SqlDbType.Int).Value = tipoFuncionarioId;
-                        command.Parameters.Add("@JWT", System.Data.SqlDbType.NVarChar, 200).Value = jwt;
-
+                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = funcionario.Nome;
+                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = funcionario.NIF;
+                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = funcionario.DataEntrada;
+                        command.Parameters.Add("@Contacto", System.Data.SqlDbType.Int).Value = funcionario.Contacto;
+                        command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 100).Value = funcionario.Password;
+                        command.Parameters.Add("@TipoFuncionárioid", System.Data.SqlDbType.Int).Value = funcionario.TipoFuncionárioid;
                         int rowsAffected = command.ExecuteNonQuery();
                         return rowsAffected > 0;
                     }
@@ -154,10 +151,10 @@ namespace ISI_TP02_ASMX
         }
 
         [WebMethod]
-        public void UpdateFuncionario(int id, string nome, int nif, DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public bool UpdateFuncionario(Funcionario funcionario)
         {
             string query = "UPDATE Funcionário SET Nome = @Nome, NIF = @NIF, DataEntrada = @DataEntrada, " +
-                           "Contacto = @Contacto, Password = @Password, TipoFuncionárioid = @TipoFuncionárioid, JWT = @JWT WHERE Id = @Id";
+                           "Contacto = @Contacto, Password = @Password, TipoFuncionárioid = @TipoFuncionárioid WHERE Id = @Id";
 
             try
             {
@@ -167,18 +164,17 @@ namespace ISI_TP02_ASMX
 
                     using (var command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
-                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
-                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
-                        command.Parameters.Add("@Contacto", System.Data.SqlDbType.Int).Value = contacto;
-                        command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 100).Value = password;
-                        command.Parameters.Add("@TipoFuncionárioid", System.Data.SqlDbType.Int).Value = tipoFuncionarioId;
-                        command.Parameters.Add("@JWT", System.Data.SqlDbType.NVarChar, 200).Value = jwt;
-                        command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
-
+                        command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value=funcionario.Id;
+                        command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = funcionario.Nome;
+                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = funcionario.NIF;
+                        command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = funcionario.DataEntrada;
+                        command.Parameters.Add("@Contacto", System.Data.SqlDbType.Int).Value = funcionario.Contacto;
+                        command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 100).Value = funcionario.Password;
+                        command.Parameters.Add("@TipoFuncionárioid", System.Data.SqlDbType.Int).Value = funcionario.TipoFuncionárioid;
                         command.ExecuteNonQuery();
                     }
                 }
+                return true;
             }
             catch (Exception ex)
             {

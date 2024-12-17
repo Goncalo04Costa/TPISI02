@@ -90,8 +90,7 @@
               "RelativeToolTip": "App_Code\\Models\\TipoMedico.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:50.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:50.119Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "RelativeToolTip": "App_Code\\Models\\Medico.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:30.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:30.642Z"
             },
             {
               "$type": "Document",
@@ -116,8 +114,7 @@
               "RelativeToolTip": "App_Code\\Models\\Hospital.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:41:16.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:41:16.59Z"
             },
             {
               "$type": "Document",
@@ -129,8 +126,7 @@
               "RelativeToolTip": "App_Code\\Models\\TipoUtente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:40:12.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:40:12.231Z"
             },
             {
               "$type": "Document",
@@ -142,8 +138,7 @@
               "RelativeToolTip": "App_Code\\Models\\Utente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:39:44.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:39:44.757Z"
             },
             {
               "$type": "Document",
@@ -155,8 +150,7 @@
               "RelativeToolTip": "App_Code\\Models\\Consulta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:33:51.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:33:51.956Z"
             },
             {
               "$type": "Document",
@@ -168,8 +162,7 @@
               "RelativeToolTip": "App_Code\\Models\\TipoFuncionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:33:00.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:33:00.437Z"
             },
             {
               "$type": "Document",
@@ -181,8 +174,7 @@
               "RelativeToolTip": "App_Code\\Models\\Funcionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:32:21.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:32:21.856Z"
             },
             {
               "$type": "Document",
@@ -194,8 +186,7 @@
               "RelativeToolTip": "App_Code\\IHospitalService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:26:04.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:26:04.195Z"
             },
             {
               "$type": "Document",
@@ -218,7 +209,7 @@
               "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeToolTip": "App_Code\\HospitalService.cs",
-              "ViewState": "AQIAAB0BAAAAAAAAAAAtwDcBAAARAAAA",
+              "ViewState": "AQIAAAkBAAAAAAAAAAApwDcBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T14:12:31.152Z",
               "EditorCaption": ""

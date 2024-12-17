@@ -32,8 +32,6 @@ namespace AsmxService
         
         private int TipoFuncionárioidField;
         
-        private string JWTField;
-        
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
         public int Id
         {
@@ -124,17 +122,101 @@ namespace AsmxService
                 this.TipoFuncionárioidField = value;
             }
         }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Utente", Namespace="http://tempuri.org/")]
+    public partial class Utente : object
+    {
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string JWT
+        private int IdField;
+        
+        private string NomeField;
+        
+        private int NIFField;
+        
+        private System.DateTime DataEntradaField;
+        
+        private int TipoUtenteIdField;
+        
+        private int HospitalIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int Id
         {
             get
             {
-                return this.JWTField;
+                return this.IdField;
             }
             set
             {
-                this.JWTField = value;
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Nome
+        {
+            get
+            {
+                return this.NomeField;
+            }
+            set
+            {
+                this.NomeField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public int NIF
+        {
+            get
+            {
+                return this.NIFField;
+            }
+            set
+            {
+                this.NIFField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public System.DateTime DataEntrada
+        {
+            get
+            {
+                return this.DataEntradaField;
+            }
+            set
+            {
+                this.DataEntradaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int TipoUtenteId
+        {
+            get
+            {
+                return this.TipoUtenteIdField;
+            }
+            set
+            {
+                this.TipoUtenteIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public int HospitalId
+        {
+            get
+            {
+                return this.HospitalIdField;
+            }
+            set
+            {
+                this.HospitalIdField = value;
             }
         }
     }
@@ -158,6 +240,21 @@ namespace AsmxService
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteFuncionario", ReplyAction="*")]
         System.Threading.Tasks.Task<bool> DeleteFuncionarioAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllUtentes", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.GetAllUtentesResponse> GetAllUtentesAsync(AsmxService.GetAllUtentesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetUtenteById", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.GetUtenteByIdResponse> GetUtenteByIdAsync(AsmxService.GetUtenteByIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateUtente", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.CreateUtenteResponse> CreateUtenteAsync(AsmxService.CreateUtenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateUtente", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.UpdateUtenteResponse> UpdateUtenteAsync(AsmxService.UpdateUtenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteUtente", ReplyAction="*")]
+        System.Threading.Tasks.Task<bool> DeleteUtenteAsync(int id);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -340,39 +437,15 @@ namespace AsmxService
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string nome;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int nif;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
-        public System.DateTime dataEntrada;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
-        public int contacto;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public string password;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
-        public int tipoFuncionarioId;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public string jwt;
+        public AsmxService.Funcionario funcionario;
         
         public CreateFuncionarioRequestBody()
         {
         }
         
-        public CreateFuncionarioRequestBody(string nome, int nif, System.DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public CreateFuncionarioRequestBody(AsmxService.Funcionario funcionario)
         {
-            this.nome = nome;
-            this.nif = nif;
-            this.dataEntrada = dataEntrada;
-            this.contacto = contacto;
-            this.password = password;
-            this.tipoFuncionarioId = tipoFuncionarioId;
-            this.jwt = jwt;
+            this.funcionario = funcionario;
         }
     }
     
@@ -443,44 +516,16 @@ namespace AsmxService
     public partial class UpdateFuncionarioRequestBody
     {
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public int id;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string nome;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
-        public int nif;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
-        public System.DateTime dataEntrada;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
-        public int contacto;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public string password;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=6)]
-        public int tipoFuncionarioId;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
-        public string jwt;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Funcionario funcionario;
         
         public UpdateFuncionarioRequestBody()
         {
         }
         
-        public UpdateFuncionarioRequestBody(int id, string nome, int nif, System.DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public UpdateFuncionarioRequestBody(AsmxService.Funcionario funcionario)
         {
-            this.id = id;
-            this.nome = nome;
-            this.nif = nif;
-            this.dataEntrada = dataEntrada;
-            this.contacto = contacto;
-            this.password = password;
-            this.tipoFuncionarioId = tipoFuncionarioId;
-            this.jwt = jwt;
+            this.funcionario = funcionario;
         }
     }
     
@@ -507,11 +552,359 @@ namespace AsmxService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class UpdateFuncionarioResponseBody
     {
         
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool UpdateFuncionarioResult;
+        
         public UpdateFuncionarioResponseBody()
+        {
+        }
+        
+        public UpdateFuncionarioResponseBody(bool UpdateFuncionarioResult)
+        {
+            this.UpdateFuncionarioResult = UpdateFuncionarioResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUtentesRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUtentes", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetAllUtentesRequestBody Body;
+        
+        public GetAllUtentesRequest()
+        {
+        }
+        
+        public GetAllUtentesRequest(AsmxService.GetAllUtentesRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllUtentesRequestBody
+    {
+        
+        public GetAllUtentesRequestBody()
+        {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllUtentesResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllUtentesResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetAllUtentesResponseBody Body;
+        
+        public GetAllUtentesResponse()
+        {
+        }
+        
+        public GetAllUtentesResponse(AsmxService.GetAllUtentesResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllUtentesResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Utente[] GetAllUtentesResult;
+        
+        public GetAllUtentesResponseBody()
+        {
+        }
+        
+        public GetAllUtentesResponseBody(AsmxService.Utente[] GetAllUtentesResult)
+        {
+            this.GetAllUtentesResult = GetAllUtentesResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetUtenteByIdRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetUtenteById", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetUtenteByIdRequestBody Body;
+        
+        public GetUtenteByIdRequest()
+        {
+        }
+        
+        public GetUtenteByIdRequest(AsmxService.GetUtenteByIdRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetUtenteByIdRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public GetUtenteByIdRequestBody()
+        {
+        }
+        
+        public GetUtenteByIdRequestBody(int id)
+        {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetUtenteByIdResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetUtenteByIdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetUtenteByIdResponseBody Body;
+        
+        public GetUtenteByIdResponse()
+        {
+        }
+        
+        public GetUtenteByIdResponse(AsmxService.GetUtenteByIdResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetUtenteByIdResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Utente GetUtenteByIdResult;
+        
+        public GetUtenteByIdResponseBody()
+        {
+        }
+        
+        public GetUtenteByIdResponseBody(AsmxService.Utente GetUtenteByIdResult)
+        {
+            this.GetUtenteByIdResult = GetUtenteByIdResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateUtenteRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateUtente", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.CreateUtenteRequestBody Body;
+        
+        public CreateUtenteRequest()
+        {
+        }
+        
+        public CreateUtenteRequest(AsmxService.CreateUtenteRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateUtenteRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string nome;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int nif;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public System.DateTime dataEntrada;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public int tipoUtenteId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public int hospitalId;
+        
+        public CreateUtenteRequestBody()
+        {
+        }
+        
+        public CreateUtenteRequestBody(string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            this.nome = nome;
+            this.nif = nif;
+            this.dataEntrada = dataEntrada;
+            this.tipoUtenteId = tipoUtenteId;
+            this.hospitalId = hospitalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateUtenteResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateUtenteResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.CreateUtenteResponseBody Body;
+        
+        public CreateUtenteResponse()
+        {
+        }
+        
+        public CreateUtenteResponse(AsmxService.CreateUtenteResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateUtenteResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CreateUtenteResult;
+        
+        public CreateUtenteResponseBody()
+        {
+        }
+        
+        public CreateUtenteResponseBody(bool CreateUtenteResult)
+        {
+            this.CreateUtenteResult = CreateUtenteResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateUtenteRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateUtente", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.UpdateUtenteRequestBody Body;
+        
+        public UpdateUtenteRequest()
+        {
+        }
+        
+        public UpdateUtenteRequest(AsmxService.UpdateUtenteRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateUtenteRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string nome;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int nif;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public System.DateTime dataEntrada;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public int tipoUtenteId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=5)]
+        public int hospitalId;
+        
+        public UpdateUtenteRequestBody()
+        {
+        }
+        
+        public UpdateUtenteRequestBody(int id, string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            this.id = id;
+            this.nome = nome;
+            this.nif = nif;
+            this.dataEntrada = dataEntrada;
+            this.tipoUtenteId = tipoUtenteId;
+            this.hospitalId = hospitalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateUtenteResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateUtenteResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.UpdateUtenteResponseBody Body;
+        
+        public UpdateUtenteResponse()
+        {
+        }
+        
+        public UpdateUtenteResponse(AsmxService.UpdateUtenteResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class UpdateUtenteResponseBody
+    {
+        
+        public UpdateUtenteResponseBody()
         {
         }
     }
@@ -592,17 +985,11 @@ namespace AsmxService
             return base.Channel.CreateFuncionarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<AsmxService.CreateFuncionarioResponse> CreateFuncionarioAsync(string nome, int nif, System.DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public System.Threading.Tasks.Task<AsmxService.CreateFuncionarioResponse> CreateFuncionarioAsync(AsmxService.Funcionario funcionario)
         {
             AsmxService.CreateFuncionarioRequest inValue = new AsmxService.CreateFuncionarioRequest();
             inValue.Body = new AsmxService.CreateFuncionarioRequestBody();
-            inValue.Body.nome = nome;
-            inValue.Body.nif = nif;
-            inValue.Body.dataEntrada = dataEntrada;
-            inValue.Body.contacto = contacto;
-            inValue.Body.password = password;
-            inValue.Body.tipoFuncionarioId = tipoFuncionarioId;
-            inValue.Body.jwt = jwt;
+            inValue.Body.funcionario = funcionario;
             return ((AsmxService.HospitalServiceSoap)(this)).CreateFuncionarioAsync(inValue);
         }
         
@@ -612,24 +999,86 @@ namespace AsmxService
             return base.Channel.UpdateFuncionarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<AsmxService.UpdateFuncionarioResponse> UpdateFuncionarioAsync(int id, string nome, int nif, System.DateTime dataEntrada, int contacto, string password, int tipoFuncionarioId, string jwt)
+        public System.Threading.Tasks.Task<AsmxService.UpdateFuncionarioResponse> UpdateFuncionarioAsync(AsmxService.Funcionario funcionario)
         {
             AsmxService.UpdateFuncionarioRequest inValue = new AsmxService.UpdateFuncionarioRequest();
             inValue.Body = new AsmxService.UpdateFuncionarioRequestBody();
-            inValue.Body.id = id;
-            inValue.Body.nome = nome;
-            inValue.Body.nif = nif;
-            inValue.Body.dataEntrada = dataEntrada;
-            inValue.Body.contacto = contacto;
-            inValue.Body.password = password;
-            inValue.Body.tipoFuncionarioId = tipoFuncionarioId;
-            inValue.Body.jwt = jwt;
+            inValue.Body.funcionario = funcionario;
             return ((AsmxService.HospitalServiceSoap)(this)).UpdateFuncionarioAsync(inValue);
         }
         
         public System.Threading.Tasks.Task<bool> DeleteFuncionarioAsync(int id)
         {
             return base.Channel.DeleteFuncionarioAsync(id);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.GetAllUtentesResponse> AsmxService.HospitalServiceSoap.GetAllUtentesAsync(AsmxService.GetAllUtentesRequest request)
+        {
+            return base.Channel.GetAllUtentesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.GetAllUtentesResponse> GetAllUtentesAsync()
+        {
+            AsmxService.GetAllUtentesRequest inValue = new AsmxService.GetAllUtentesRequest();
+            inValue.Body = new AsmxService.GetAllUtentesRequestBody();
+            return ((AsmxService.HospitalServiceSoap)(this)).GetAllUtentesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.GetUtenteByIdResponse> AsmxService.HospitalServiceSoap.GetUtenteByIdAsync(AsmxService.GetUtenteByIdRequest request)
+        {
+            return base.Channel.GetUtenteByIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.GetUtenteByIdResponse> GetUtenteByIdAsync(int id)
+        {
+            AsmxService.GetUtenteByIdRequest inValue = new AsmxService.GetUtenteByIdRequest();
+            inValue.Body = new AsmxService.GetUtenteByIdRequestBody();
+            inValue.Body.id = id;
+            return ((AsmxService.HospitalServiceSoap)(this)).GetUtenteByIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.CreateUtenteResponse> AsmxService.HospitalServiceSoap.CreateUtenteAsync(AsmxService.CreateUtenteRequest request)
+        {
+            return base.Channel.CreateUtenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.CreateUtenteResponse> CreateUtenteAsync(string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            AsmxService.CreateUtenteRequest inValue = new AsmxService.CreateUtenteRequest();
+            inValue.Body = new AsmxService.CreateUtenteRequestBody();
+            inValue.Body.nome = nome;
+            inValue.Body.nif = nif;
+            inValue.Body.dataEntrada = dataEntrada;
+            inValue.Body.tipoUtenteId = tipoUtenteId;
+            inValue.Body.hospitalId = hospitalId;
+            return ((AsmxService.HospitalServiceSoap)(this)).CreateUtenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.UpdateUtenteResponse> AsmxService.HospitalServiceSoap.UpdateUtenteAsync(AsmxService.UpdateUtenteRequest request)
+        {
+            return base.Channel.UpdateUtenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.UpdateUtenteResponse> UpdateUtenteAsync(int id, string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        {
+            AsmxService.UpdateUtenteRequest inValue = new AsmxService.UpdateUtenteRequest();
+            inValue.Body = new AsmxService.UpdateUtenteRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.nome = nome;
+            inValue.Body.nif = nif;
+            inValue.Body.dataEntrada = dataEntrada;
+            inValue.Body.tipoUtenteId = tipoUtenteId;
+            inValue.Body.hospitalId = hospitalId;
+            return ((AsmxService.HospitalServiceSoap)(this)).UpdateUtenteAsync(inValue);
+        }
+        
+        public System.Threading.Tasks.Task<bool> DeleteUtenteAsync(int id)
+        {
+            return base.Channel.DeleteUtenteAsync(id);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
