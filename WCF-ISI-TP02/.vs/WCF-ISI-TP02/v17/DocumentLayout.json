@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\wcf-isi-tp02\\app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\wcf-isi-tp02\\app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\wcf-isi-tp02\\app_code\\models\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,19 +102,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Medico.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
-              "RelativeDocumentMoniker": "App_Code\\Models\\Medico.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
-              "RelativeToolTip": "App_Code\\Models\\Medico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T00:10:31.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Hospital.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Hospital.cs",
@@ -123,8 +110,7 @@
               "RelativeToolTip": "App_Code\\Models\\Hospital.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T00:10:27.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T00:10:27.241Z"
             },
             {
               "$type": "Document",
@@ -136,8 +122,7 @@
               "RelativeToolTip": "App_Code\\Models\\Consulta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T00:09:55.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T00:09:55.417Z"
             },
             {
               "$type": "Document",
@@ -147,7 +132,7 @@
               "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeToolTip": "App_Code\\IHospitalService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwDQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T23:40:24.43Z",
               "EditorCaption": ""
@@ -220,10 +205,22 @@
               "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeToolTip": "App_Code\\HospitalService.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAwwAgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T14:12:31.152Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Medico.cs",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
+              "RelativeDocumentMoniker": "App_Code\\Models\\Medico.cs",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
+              "RelativeToolTip": "App_Code\\Models\\Medico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T00:10:31.713Z"
             },
             {
               "$type": "Document",
@@ -269,9 +266,9 @@
               "RelativeDocumentMoniker": "Service.svc",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Service.svc",
               "RelativeToolTip": "Service.svc",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
-              "WhenOpened": "2024-12-16T23:40:15.607Z"
+              "WhenOpened": "2024-12-16T23:40:15.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
