@@ -379,6 +379,41 @@ public class HospitalService : IHospitalService
         }
     }
 
+    [WebMethod]
+    public bool CreateConsulta(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId,
+                           DateTime data, TimeSpan hora, string descricao)
+    {
+        try
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"INSERT INTO Consulta (id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao) 
+                             VALUES (@id, @Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @hora, @descricao)";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@Utenteid", utenteId);
+                    command.Parameters.AddWithValue("@Funcionárioid", funcionarioId);
+                    command.Parameters.AddWithValue("@Hospitalid", hospitalId);
+                    command.Parameters.AddWithValue("@Medicoid", medicoId);
+                    command.Parameters.AddWithValue("@data", data);
+                    command.Parameters.AddWithValue("@hora", hora);
+                    command.Parameters.AddWithValue("@descricao", descricao);
+
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0; // Retorna true se a inserção foi bem-sucedida
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new ApplicationException("Erro ao criar consulta", ex);
+        }
+    }
+
+
 }
 
 
