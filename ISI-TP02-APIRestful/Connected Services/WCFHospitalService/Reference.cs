@@ -128,7 +128,7 @@ namespace WCFHospitalService
         
         private WCFHospitalService.Funcionario FuncionarioField;
         
-        private int FuncionarioIdField;
+        private System.Nullable<int> FuncionarioIdField;
         
         private System.TimeSpan HoraField;
         
@@ -186,7 +186,7 @@ namespace WCFHospitalService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int FuncionarioId
+        public System.Nullable<int> FuncionarioId
         {
             get
             {
@@ -732,6 +732,36 @@ namespace WCFHospitalService
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/GetHospitalByLoc", ReplyAction="http://tempuri.org/IHospitalService/GetHospitalByLocResponse")]
         System.Threading.Tasks.Task<WCFHospitalService.Hospital> GetHospitalByLocAsync(string localização);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/CreateConsulta", ReplyAction="http://tempuri.org/IHospitalService/CreateConsultaResponse")]
+        System.Threading.Tasks.Task<bool> CreateConsultaAsync(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/GetAllConsultas", ReplyAction="http://tempuri.org/IHospitalService/GetAllConsultasResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetAllConsultasAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/deleteConsulta", ReplyAction="http://tempuri.org/IHospitalService/deleteConsultaResponse")]
+        System.Threading.Tasks.Task<bool> deleteConsultaAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/UpdateConsulta", ReplyAction="http://tempuri.org/IHospitalService/UpdateConsultaResponse")]
+        System.Threading.Tasks.Task<bool> UpdateConsultaAsync(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/ConsultaById", ReplyAction="http://tempuri.org/IHospitalService/ConsultaByIdResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta> ConsultaByIdAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/ConsultaByHospital", ReplyAction="http://tempuri.org/IHospitalService/ConsultaByHospitalResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByHospitalAsync(int hospitalId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/ConsultaByUtente", ReplyAction="http://tempuri.org/IHospitalService/ConsultaByUtenteResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByUtenteAsync(int utenteId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/ConsultaByFuncionario", ReplyAction="http://tempuri.org/IHospitalService/ConsultaByFuncionarioResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByFuncionarioAsync(int funcionarioId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/GetConsultasSemFuncionario", ReplyAction="http://tempuri.org/IHospitalService/GetConsultasSemFuncionarioResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetConsultasSemFuncionarioAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/AutenticarUtilizador", ReplyAction="http://tempuri.org/IHospitalService/AutenticarUtilizadorResponse")]
+        System.Threading.Tasks.Task<WCFHospitalService.Funcionario> AutenticarUtilizadorAsync(WCFHospitalService.Funcionario f);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
@@ -832,6 +862,56 @@ namespace WCFHospitalService
         public System.Threading.Tasks.Task<WCFHospitalService.Hospital> GetHospitalByLocAsync(string localização)
         {
             return base.Channel.GetHospitalByLocAsync(localização);
+        }
+        
+        public System.Threading.Tasks.Task<bool> CreateConsultaAsync(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao)
+        {
+            return base.Channel.CreateConsultaAsync(id, utenteId, funcionarioId, hospitalId, medicoId, data, hora, descricao);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetAllConsultasAsync()
+        {
+            return base.Channel.GetAllConsultasAsync();
+        }
+        
+        public System.Threading.Tasks.Task<bool> deleteConsultaAsync(int id)
+        {
+            return base.Channel.deleteConsultaAsync(id);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateConsultaAsync(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao)
+        {
+            return base.Channel.UpdateConsultaAsync(UtenteId, FuncionarioId, hospitalId, medicoId, data, hora, descricao);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta> ConsultaByIdAsync(int id)
+        {
+            return base.Channel.ConsultaByIdAsync(id);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByHospitalAsync(int hospitalId)
+        {
+            return base.Channel.ConsultaByHospitalAsync(hospitalId);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByUtenteAsync(int utenteId)
+        {
+            return base.Channel.ConsultaByUtenteAsync(utenteId);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByFuncionarioAsync(int funcionarioId)
+        {
+            return base.Channel.ConsultaByFuncionarioAsync(funcionarioId);
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetConsultasSemFuncionarioAsync()
+        {
+            return base.Channel.GetConsultasSemFuncionarioAsync();
+        }
+        
+        public System.Threading.Tasks.Task<WCFHospitalService.Funcionario> AutenticarUtilizadorAsync(WCFHospitalService.Funcionario f)
+        {
+            return base.Channel.AutenticarUtilizadorAsync(f);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

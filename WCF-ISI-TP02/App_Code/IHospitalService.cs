@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
+using System.Threading.Tasks;
 
 [ServiceContract]
 public interface IHospitalService
@@ -65,5 +66,9 @@ public interface IHospitalService
 
     [OperationContract]
     List<Consulta> GetConsultasSemFuncionario();
+
+
+    [OperationContract]
+     Task<Funcionario> AutenticarUtilizador(Funcionario f);
 
 }

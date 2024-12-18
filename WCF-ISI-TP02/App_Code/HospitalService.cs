@@ -1,10 +1,14 @@
 ﻿using ISITP02.Models;
 using System;
+using System.Activities.Statements;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Data.SqlClient;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.ServiceModel;
+using System.Threading.Tasks;
 using System.Web.Services;
 
 public class HospitalService : IHospitalService
@@ -12,7 +16,10 @@ public class HospitalService : IHospitalService
     private string connectionString = "Server=tcp:gestaohospitalar.database.windows.net,1433;Initial Catalog=ISItp02;Persist Security Info=False;User ID=TP-ISI;Password=Goncalo18_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
-    public HospitalService() { }
+    public HospitalService()
+    {
+
+    }
 
 
     [WebMethod]
@@ -78,11 +85,11 @@ public class HospitalService : IHospitalService
                             int tipoMedicoId = reader.GetInt32(2);
                             TipoMedico tipoMedico = tiposMedico.FirstOrDefault(t => t.Id == tipoMedicoId);
                             medicos.Add(new Medico
-                           {
-                               Id = reader.GetInt32(0),
-                               Nome = reader.GetString(1),
-                               TipoMedico = tipoMedico
-                           });
+                            {
+                                Id = reader.GetInt32(0),
+                                Nome = reader.GetString(1),
+                                TipoMedico = tipoMedico
+                            });
                         }
                     }
                 }
@@ -144,7 +151,7 @@ public class HospitalService : IHospitalService
                     }
                 }
             }
-            return null; 
+            return null;
         }
         catch (Exception ex)
         {
@@ -298,11 +305,11 @@ public class HospitalService : IHospitalService
             {
                 connection.Open();
 
-                
+
                 string query = "SELECT id, nome, localizacao FROM Hospital";
                 string obterQuery = "SELECT id, data, Hospitalid FROM Consulta";
 
-                
+
                 using (SqlCommand obterConsultas = new SqlCommand(obterQuery, connection))
                 {
                     using (SqlDataReader reader = obterConsultas.ExecuteReader())
@@ -311,15 +318,15 @@ public class HospitalService : IHospitalService
                         {
                             consultas.Add(new Consulta
                             {
-                                Id = reader.GetInt32(0),        
-                                Data = reader.GetDateTime(1),     
-                                HospitalId = reader.GetInt32(2)   
+                                Id = reader.GetInt32(0),
+                                Data = reader.GetDateTime(1),
+                                HospitalId = reader.GetInt32(2)
                             });
                         }
                     }
                 }
 
-                
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -328,15 +335,15 @@ public class HospitalService : IHospitalService
                         {
                             int hospitalId = reader.GetInt32(0);
 
-                            
+
                             List<Consulta> hospitalConsultas = consultas.Where(c => c.HospitalId == hospitalId).ToList();
 
                             hospitais.Add(new Hospital
                             {
                                 Id = hospitalId,
-                                Nome = reader.GetString(1),           
-                                Localizacao = reader.GetString(2),   
-                                Consultas = hospitalConsultas        
+                                Nome = reader.GetString(1),
+                                Localizacao = reader.GetString(2),
+                                Consultas = hospitalConsultas
                             });
                         }
                     }
@@ -379,7 +386,7 @@ public class HospitalService : IHospitalService
                     }
                 }
             }
-            return null; 
+            return null;
         }
         catch (Exception ex)
         {
@@ -503,7 +510,7 @@ public class HospitalService : IHospitalService
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@UtenteId", UtenteId);
-                    command.Parameters.AddWithValue("@FuncionarioId", (object)FuncionarioId ?? DBNull.Value); 
+                    command.Parameters.AddWithValue("@FuncionarioId", (object)FuncionarioId ?? DBNull.Value);
                     command.Parameters.AddWithValue("@HospitalId", hospitalId);
                     command.Parameters.AddWithValue("@MedicoId", medicoId);
                     command.Parameters.AddWithValue("@Data", data);
@@ -635,14 +642,14 @@ public class HospitalService : IHospitalService
                         {
                             consultas.Add(new Consulta
                             {
-                                Id = reader.GetInt32(0),               
-                                UtenteId = reader.GetInt32(1),       
-                                FuncionarioId = reader.GetInt32(2),  
-                                HospitalId = reader.GetInt32(3),     
-                                MedicoId = reader.GetInt32(4),        
-                                Data = reader.GetDateTime(5),         
-                                Hora = reader.GetTimeSpan(6),         
-                                Descricao = reader.GetString(7)      
+                                Id = reader.GetInt32(0),
+                                UtenteId = reader.GetInt32(1),
+                                FuncionarioId = reader.GetInt32(2),
+                                HospitalId = reader.GetInt32(3),
+                                MedicoId = reader.GetInt32(4),
+                                Data = reader.GetDateTime(5),
+                                Hora = reader.GetTimeSpan(6),
+                                Descricao = reader.GetString(7)
                             });
                         }
                     }
@@ -679,20 +686,20 @@ public class HospitalService : IHospitalService
                         {
                             return new Consulta
                             {
-                                Id = reader.GetInt32(0),               
-                                UtenteId = reader.GetInt32(1),       
-                                FuncionarioId = reader.GetInt32(2),   
-                                HospitalId = reader.GetInt32(3),      
-                                MedicoId = reader.GetInt32(4),        
-                                Data = reader.GetDateTime(5),        
-                                Hora = reader.GetTimeSpan(6),         
-                                Descricao = reader.GetString(7)       
+                                Id = reader.GetInt32(0),
+                                UtenteId = reader.GetInt32(1),
+                                FuncionarioId = reader.GetInt32(2),
+                                HospitalId = reader.GetInt32(3),
+                                MedicoId = reader.GetInt32(4),
+                                Data = reader.GetDateTime(5),
+                                Hora = reader.GetTimeSpan(6),
+                                Descricao = reader.GetString(7)
                             };
                         }
                     }
                 }
             }
-            return null; 
+            return null;
         }
         catch (Exception ex)
         {
@@ -722,7 +729,7 @@ public class HospitalService : IHospitalService
                         {
                             Id = (int)reader["id"],
                             UtenteId = (int)reader["Utenteid"],
-                            FuncionarioId = null, 
+                            FuncionarioId = null,
                             HospitalId = (int)reader["Hospitalid"],
                             MedicoId = (int)reader["Medicoid"],
                             Data = (DateTime)reader["data"],
@@ -741,8 +748,63 @@ public class HospitalService : IHospitalService
     }
 
 
+    /// <summary>
+    /// Recebe o objeto do utilizador e verifica as credenciais.
+    /// </summary>
+    /// <param name="f">O funcionário com NIF e senha para autenticação.</param>
+    /// <returns>O funcionário autenticado ou null se as credenciais forem inválidas.</returns>
+    [WebMethod]
+    public async Task<Funcionario> AutenticarUtilizador(Funcionario f)
+    {
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            try
+            {
+                await  connection.OpenAsync();
+                // Query para buscar funcionário pelo NIF
+                string query = @" SELECT Id, Nome, NIF, DataEntrada, Contacto, Password, TipoFuncionárioid
+                                 FROM Funcionário WHERE NIF = @NIF";
+
+                SqlCommand verificarFuncionario = new SqlCommand(query, connection);
+                verificarFuncionario.Parameters.AddWithValue("@NIF", f.NIF);
 
 
+                TipoFuncionario T = new TipoFuncionario();
+                f.TipoFuncionario = T;
+                using (var reader = await verificarFuncionario.ExecuteReaderAsync())
+                {
+                    if (await reader.ReadAsync())
+                    {
+                   
+                        string passwordBd = reader.GetString(reader.GetOrdinal("Password"));
+
+                        if (f.Password == passwordBd)
+                        {
+                            f.Id = reader.GetInt32(reader.GetOrdinal("Id"));
+                            f.Nome = reader.GetString(reader.GetOrdinal("Nome"));
+                            f.NIF = reader.GetInt32(reader.GetOrdinal("NIF"));
+                            f.DataEntrada = reader.GetDateTime(reader.GetOrdinal("DataEntrada"));
+                            f.Contacto = reader.GetInt32(reader.GetOrdinal("Contacto"));
+                            f.TipoFuncionario.Id = reader.GetInt32(reader.GetOrdinal("TipoFuncionárioid"));
+                            return f; 
+                        }
+                    }
+                }
+                return null; 
+            }
+
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
 }
+
+
 
 

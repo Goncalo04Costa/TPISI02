@@ -1,7 +1,11 @@
 ﻿using AsmxService;
+using ISI_TP02_APIRestful.JWT;
+using ISI_TP02_APIRestful.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.ServiceModel;
+using WCFHospitalService;
 
 namespace ISI_TP02_APIRestful.Controllers
 {
@@ -10,6 +14,8 @@ namespace ISI_TP02_APIRestful.Controllers
     public class FuncionarioController : ControllerBase
     {
         public HospitalServiceSoapClient asmxClient;
+
+        public HospitalServiceClient WCFcliente = new HospitalServiceClient();
 
         public FuncionarioController()
         {
@@ -28,7 +34,7 @@ namespace ISI_TP02_APIRestful.Controllers
 
 
         [HttpPost("create")]
-        public async Task<IActionResult> Create(Funcionario funcionario)
+        public async Task<IActionResult> Create(AsmxService.Funcionario funcionario)
         {
             
             var request = await asmxClient.CreateFuncionarioAsync(funcionario);
@@ -40,13 +46,42 @@ namespace ISI_TP02_APIRestful.Controllers
 
         [HttpPut("update")]
 
-        public async Task<IActionResult> Update(Funcionario funcionario)
+        public async Task<IActionResult> Update(AsmxService.Funcionario funcionario)
         {
             var request = await asmxClient.UpdateFuncionarioAsync(funcionario);
             if (request.Body.UpdateFuncionarioResult)
                 return Ok(request.Body.UpdateFuncionarioResult);
             return BadRequest();
 
+        }
+
+        /// <summary>
+        /// Auxilio para autenticar o utilizador.
+        /// </summary>
+        /// <param name="loginRequest">The login request.</param>
+        /// <returns></returns>
+        [HttpPost("RealizarLogin")]
+        public async Task<IActionResult> LoginFuncionario([FromBody] Login loginRequest)
+        {
+            obterJWT funcoesAuxiliares = new obterJWT();
+            try
+            {
+                WCFHospitalService.Funcionario f = new WCFHospitalService.Funcionario();
+                f.NIF = loginRequest.NIF;
+                f.Password = loginRequest.Password;
+                var userValido = await WCFcliente.AutenticarUtilizadorAsync(f);
+                if (userValido == null)
+                {
+                    return Unauthorized("Email ou password inválido.");
+                }
+                var token = funcoesAuxiliares.GenerateJwtToken(userValido);
+
+                return Ok(token);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
