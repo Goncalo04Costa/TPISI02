@@ -51,15 +51,19 @@ public interface IHospitalService
     bool UpdateConsulta(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao);
 
     [OperationContract]
-    Consulta ConsultaById(int id);  //metodo retorna apenas um objeto 
+    Consulta ConsultaById(int id);  
 
     [OperationContract]
-    List<Consulta> ConsultaByHospital(int hospitalId); //retorna multiplos resultados -hospital-varias consultas
+    List<Consulta> ConsultaByHospital(int hospitalId); 
 
     [OperationContract]
     List<Consulta> ConsultaByUtente(int utenteId);
 
     [OperationContract]
     List<Consulta> ConsultaByFuncionario(int funcionarioId);
+
+
+    [OperationContract]
+    List<Consulta> GetConsultasSemFuncionario();
 
 }

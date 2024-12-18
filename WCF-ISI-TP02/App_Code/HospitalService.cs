@@ -11,8 +11,11 @@ public class HospitalService : IHospitalService
 {
     private string connectionString = "Server=tcp:gestaohospitalar.database.windows.net,1433;Initial Catalog=ISItp02;Persist Security Info=False;User ID=TP-ISI;Password=Goncalo18_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
+
     public HospitalService() { }
 
+
+    [WebMethod]
     public bool CreateMedico(string nome, int tipoMedicoId)
     {
         try
@@ -38,6 +41,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public List<Medico> GetAllMedicos()
     {
         List<Medico> medicos = new List<Medico>();
@@ -90,6 +95,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public Medico GetMedicoById(int id)
     {
         List<TipoMedico> tiposMedico = new List<TipoMedico>();
@@ -145,6 +152,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public bool UpdateMedico(int id, string nome, int tipoMedicoId)
     {
         try
@@ -171,6 +180,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public bool DeleteMedico(int id)
     {
         try
@@ -194,7 +205,9 @@ public class HospitalService : IHospitalService
             throw new ApplicationException("Error deleting medico", ex);
         }
     }
-   
+
+
+    [WebMethod]
     public bool CreateTipoMedico(string descricao)
     {
         try
@@ -219,6 +232,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public bool DeleteTipoMedico(string descricao)
     {
         try
@@ -243,6 +258,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public bool CreateHospital(string nome, string localizacao)
     {
         try
@@ -268,6 +285,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public List<Hospital> GETALLHOSPITAIS()
     {
         List<Hospital> hospitais = new List<Hospital>();
@@ -331,6 +350,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public Hospital GetHospitalByLoc(string localização)
     {
         try
@@ -366,6 +387,9 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+
+    [WebMethod]
     public bool CreateConsulta(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId,
                            DateTime data, TimeSpan hora, string descricao)
     {
@@ -381,7 +405,7 @@ public class HospitalService : IHospitalService
                 {
                     command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@Utenteid", utenteId);
-                    command.Parameters.AddWithValue("@Funcionárioid", funcionarioId);
+                    command.Parameters.AddWithValue("@FuncionarioId", (object)funcionarioId ?? DBNull.Value);
                     command.Parameters.AddWithValue("@Hospitalid", hospitalId);
                     command.Parameters.AddWithValue("@Medicoid", medicoId);
                     command.Parameters.AddWithValue("@data", data);
@@ -398,7 +422,10 @@ public class HospitalService : IHospitalService
             throw new ApplicationException("Erro ao criar consulta", ex);
         }
     }
-   
+
+
+    [WebMethod]
+
     public List<Consulta> GetAllConsultas()
     {
         List<Consulta> consultas = new List<Consulta>();
@@ -435,7 +462,9 @@ public class HospitalService : IHospitalService
         }
         return consultas;
     }
-   
+
+    [WebMethod]
+
     public bool deleteConsulta(int id)
     {
         try
@@ -460,6 +489,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public bool UpdateConsulta(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao)
     {
         try
@@ -472,7 +503,7 @@ public class HospitalService : IHospitalService
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@UtenteId", UtenteId);
-                    command.Parameters.AddWithValue("@FuncionarioId", FuncionarioId);
+                    command.Parameters.AddWithValue("@FuncionarioId", (object)FuncionarioId ?? DBNull.Value); 
                     command.Parameters.AddWithValue("@HospitalId", hospitalId);
                     command.Parameters.AddWithValue("@MedicoId", medicoId);
                     command.Parameters.AddWithValue("@Data", data);
@@ -490,6 +521,8 @@ public class HospitalService : IHospitalService
         }
     }
 
+
+    [WebMethod]
     public List<Consulta> ConsultaByHospital(int hospitalId)
     {
         List<Consulta> consultas = new List<Consulta>();
@@ -530,6 +563,9 @@ public class HospitalService : IHospitalService
         return consultas;
     }
 
+
+
+    [WebMethod]
     public List<Consulta> ConsultaByUtente(int utenteId)
     {
         try
@@ -573,7 +609,9 @@ public class HospitalService : IHospitalService
             throw new ApplicationException("Erro ao buscar consultas pelo utente", ex);
         }
     }
-    
+
+    [WebMethod]
+
     public List<Consulta> ConsultaByFuncionario(int funcionarioId)
     {
         try
@@ -597,14 +635,14 @@ public class HospitalService : IHospitalService
                         {
                             consultas.Add(new Consulta
                             {
-                                Id = reader.GetInt32(0),               // id
-                                UtenteId = reader.GetInt32(1),        // Utenteid
-                                FuncionarioId = reader.GetInt32(2),   // Funcionárioid
-                                HospitalId = reader.GetInt32(3),      // Hospitalid
-                                MedicoId = reader.GetInt32(4),        // Medicoid
-                                Data = reader.GetDateTime(5),         // data
-                                Hora = reader.GetTimeSpan(6),         // hora
-                                Descricao = reader.GetString(7)       // descricao
+                                Id = reader.GetInt32(0),               
+                                UtenteId = reader.GetInt32(1),       
+                                FuncionarioId = reader.GetInt32(2),  
+                                HospitalId = reader.GetInt32(3),     
+                                MedicoId = reader.GetInt32(4),        
+                                Data = reader.GetDateTime(5),         
+                                Hora = reader.GetTimeSpan(6),         
+                                Descricao = reader.GetString(7)      
                             });
                         }
                     }
@@ -618,8 +656,8 @@ public class HospitalService : IHospitalService
         }
     }
 
-    //retorna apenas um objeto Consulta com base no id da consulta, já que o id é único.
-   
+
+    [WebMethod]
     public Consulta ConsultaById(int id)
     {
         try
@@ -641,26 +679,67 @@ public class HospitalService : IHospitalService
                         {
                             return new Consulta
                             {
-                                Id = reader.GetInt32(0),               // id
-                                UtenteId = reader.GetInt32(1),        // Utenteid
-                                FuncionarioId = reader.GetInt32(2),   // Funcionárioid
-                                HospitalId = reader.GetInt32(3),      // Hospitalid
-                                MedicoId = reader.GetInt32(4),        // Medicoid
-                                Data = reader.GetDateTime(5),         // data
-                                Hora = reader.GetTimeSpan(6),         // hora
-                                Descricao = reader.GetString(7)       // descricao
+                                Id = reader.GetInt32(0),               
+                                UtenteId = reader.GetInt32(1),       
+                                FuncionarioId = reader.GetInt32(2),   
+                                HospitalId = reader.GetInt32(3),      
+                                MedicoId = reader.GetInt32(4),        
+                                Data = reader.GetDateTime(5),        
+                                Hora = reader.GetTimeSpan(6),         
+                                Descricao = reader.GetString(7)       
                             };
                         }
                     }
                 }
             }
-            return null; // Retorna null se não encontrar nenhuma consulta com o ID fornecido
+            return null; 
         }
         catch (Exception ex)
         {
             throw new ApplicationException("Erro ao buscar consulta por ID", ex);
         }
     }
+
+    [WebMethod]
+    public List<Consulta> GetConsultasSemFuncionario()
+    {
+        List<Consulta> consultas = new List<Consulta>();
+        try
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                             FROM Consulta 
+                             WHERE Funcionárioid IS NULL";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        consultas.Add(new Consulta
+                        {
+                            Id = (int)reader["id"],
+                            UtenteId = (int)reader["Utenteid"],
+                            FuncionarioId = null, 
+                            HospitalId = (int)reader["Hospitalid"],
+                            MedicoId = (int)reader["Medicoid"],
+                            Data = (DateTime)reader["data"],
+                            Hora = (TimeSpan)reader["hora"],
+                            Descricao = reader["descricao"].ToString()
+                        });
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new ApplicationException("Erro ao buscar consultas sem funcionário", ex);
+        }
+        return consultas;
+    }
+
 
 
 
