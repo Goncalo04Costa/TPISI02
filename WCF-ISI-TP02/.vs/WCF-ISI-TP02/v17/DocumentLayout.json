@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Service.svc",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
+              "RelativeDocumentMoniker": "Service.svc",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
+              "RelativeToolTip": "Service.svc",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2024-12-19T11:54:15.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Funcionario.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Utente.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Utente.cs",
@@ -75,37 +92,37 @@
               "RelativeToolTip": "App_Code\\Models\\Utente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T16:32:55.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T16:32:55.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IHospitalService.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeToolTip": "App_Code\\IHospitalService.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAwwEcAAAAEAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwCwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T16:15:05.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Consulta.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Consulta.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Consulta.cs*",
-              "RelativeToolTip": "App_Code\\Models\\Consulta.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Consulta.cs",
+              "RelativeToolTip": "App_Code\\Models\\Consulta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T16:05:05.393Z"
+              "WhenOpened": "2024-12-18T16:05:05.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
               "RelativeDocumentMoniker": "App_Code\\Models\\Medico.cs",
@@ -117,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IHospitalService.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
@@ -129,13 +146,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HospitalService.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeToolTip": "App_Code\\HospitalService.cs",
-              "ViewState": "AQIAAO8CAAAAAAAAAAAcwA4DAABMAAAA",
+              "ViewState": "AQIAAIQBAAAAAAAAAAAjwKEBAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T13:00:28.288Z",
               "EditorCaption": ""

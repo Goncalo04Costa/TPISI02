@@ -8,7 +8,7 @@ namespace ISITP02.Models
         public int Id { get; set; } 
         public int UtenteId { get; set; } 
         public Utente Utente { get; set; } 
-        public int? FuncionarioId { get; set; } 
+        public int FuncionarioId { get; set; } 
         public Funcionario Funcionario { get; set; } 
         public int HospitalId { get; set; } 
         public Hospital Hospital { get; set; } 

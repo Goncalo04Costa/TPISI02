@@ -396,23 +396,21 @@ public class HospitalService : IHospitalService
 
 
 
-    [WebMethod]
-    public bool CreateConsulta(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId,
-                           DateTime data, TimeSpan hora, string descricao)
+    public bool CreateConsulta( int utenteId, int funcionarioId, int hospitalId, int medicoId,
+                               DateTime data, TimeSpan hora, string descricao)
     {
         try
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = @"INSERT INTO Consulta (id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao) 
-                             VALUES (@id, @Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @hora, @descricao)";
+                string query = @"INSERT INTO Consulta ( Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao) 
+                             VALUES ( @Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @hora, @descricao)";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@Utenteid", utenteId);
-                    command.Parameters.AddWithValue("@FuncionarioId", (object)funcionarioId ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@Funcionárioid", funcionarioId); // Agora nunca será nulo
                     command.Parameters.AddWithValue("@Hospitalid", hospitalId);
                     command.Parameters.AddWithValue("@Medicoid", medicoId);
                     command.Parameters.AddWithValue("@data", data);
@@ -429,6 +427,7 @@ public class HospitalService : IHospitalService
             throw new ApplicationException("Erro ao criar consulta", ex);
         }
     }
+
 
 
     [WebMethod]
@@ -707,45 +706,7 @@ public class HospitalService : IHospitalService
         }
     }
 
-    [WebMethod]
-    public List<Consulta> GetConsultasSemFuncionario()
-    {
-        List<Consulta> consultas = new List<Consulta>();
-        try
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
-                             FROM Consulta 
-                             WHERE Funcionárioid IS NULL";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
-                using (SqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        consultas.Add(new Consulta
-                        {
-                            Id = (int)reader["id"],
-                            UtenteId = (int)reader["Utenteid"],
-                            FuncionarioId = null,
-                            HospitalId = (int)reader["Hospitalid"],
-                            MedicoId = (int)reader["Medicoid"],
-                            Data = (DateTime)reader["data"],
-                            Hora = (TimeSpan)reader["hora"],
-                            Descricao = reader["descricao"].ToString()
-                        });
-                    }
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            throw new ApplicationException("Erro ao buscar consultas sem funcionário", ex);
-        }
-        return consultas;
-    }
 
 
     /// <summary>

@@ -128,7 +128,7 @@ namespace WCFHospitalService
         
         private WCFHospitalService.Funcionario FuncionarioField;
         
-        private System.Nullable<int> FuncionarioIdField;
+        private int FuncionarioIdField;
         
         private System.TimeSpan HoraField;
         
@@ -186,7 +186,7 @@ namespace WCFHospitalService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> FuncionarioId
+        public int FuncionarioId
         {
             get
             {
@@ -734,7 +734,7 @@ namespace WCFHospitalService
         System.Threading.Tasks.Task<WCFHospitalService.Hospital> GetHospitalByLocAsync(string localização);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/CreateConsulta", ReplyAction="http://tempuri.org/IHospitalService/CreateConsultaResponse")]
-        System.Threading.Tasks.Task<bool> CreateConsultaAsync(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao);
+        System.Threading.Tasks.Task<bool> CreateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/GetAllConsultas", ReplyAction="http://tempuri.org/IHospitalService/GetAllConsultasResponse")]
         System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetAllConsultasAsync();
@@ -756,9 +756,6 @@ namespace WCFHospitalService
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/ConsultaByFuncionario", ReplyAction="http://tempuri.org/IHospitalService/ConsultaByFuncionarioResponse")]
         System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByFuncionarioAsync(int funcionarioId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/GetConsultasSemFuncionario", ReplyAction="http://tempuri.org/IHospitalService/GetConsultasSemFuncionarioResponse")]
-        System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetConsultasSemFuncionarioAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHospitalService/AutenticarUtilizador", ReplyAction="http://tempuri.org/IHospitalService/AutenticarUtilizadorResponse")]
         System.Threading.Tasks.Task<WCFHospitalService.Funcionario> AutenticarUtilizadorAsync(WCFHospitalService.Funcionario f);
@@ -864,9 +861,9 @@ namespace WCFHospitalService
             return base.Channel.GetHospitalByLocAsync(localização);
         }
         
-        public System.Threading.Tasks.Task<bool> CreateConsultaAsync(int id, int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao)
+        public System.Threading.Tasks.Task<bool> CreateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, System.TimeSpan hora, string descricao)
         {
-            return base.Channel.CreateConsultaAsync(id, utenteId, funcionarioId, hospitalId, medicoId, data, hora, descricao);
+            return base.Channel.CreateConsultaAsync(utenteId, funcionarioId, hospitalId, medicoId, data, hora, descricao);
         }
         
         public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetAllConsultasAsync()
@@ -902,11 +899,6 @@ namespace WCFHospitalService
         public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> ConsultaByFuncionarioAsync(int funcionarioId)
         {
             return base.Channel.ConsultaByFuncionarioAsync(funcionarioId);
-        }
-        
-        public System.Threading.Tasks.Task<WCFHospitalService.Consulta[]> GetConsultasSemFuncionarioAsync()
-        {
-            return base.Channel.GetConsultasSemFuncionarioAsync();
         }
         
         public System.Threading.Tasks.Task<WCFHospitalService.Funcionario> AutenticarUtilizadorAsync(WCFHospitalService.Funcionario f)
