@@ -752,7 +752,7 @@ namespace AsmxService
         public string nome;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int nif;
+        public int NIF;
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
         public System.DateTime dataEntrada;
@@ -767,10 +767,10 @@ namespace AsmxService
         {
         }
         
-        public CreateUtenteRequestBody(string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        public CreateUtenteRequestBody(string nome, int NIF, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
         {
             this.nome = nome;
-            this.nif = nif;
+            this.NIF = NIF;
             this.dataEntrada = dataEntrada;
             this.tipoUtenteId = tipoUtenteId;
             this.hospitalId = hospitalId;
@@ -900,12 +900,20 @@ namespace AsmxService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class UpdateUtenteResponseBody
     {
         
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool UpdateUtenteResult;
+        
         public UpdateUtenteResponseBody()
         {
+        }
+        
+        public UpdateUtenteResponseBody(bool UpdateUtenteResult)
+        {
+            this.UpdateUtenteResult = UpdateUtenteResult;
         }
     }
     
@@ -1045,12 +1053,12 @@ namespace AsmxService
             return base.Channel.CreateUtenteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<AsmxService.CreateUtenteResponse> CreateUtenteAsync(string nome, int nif, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        public System.Threading.Tasks.Task<AsmxService.CreateUtenteResponse> CreateUtenteAsync(string nome, int NIF, System.DateTime dataEntrada, int tipoUtenteId, int hospitalId)
         {
             AsmxService.CreateUtenteRequest inValue = new AsmxService.CreateUtenteRequest();
             inValue.Body = new AsmxService.CreateUtenteRequestBody();
             inValue.Body.nome = nome;
-            inValue.Body.nif = nif;
+            inValue.Body.NIF = NIF;
             inValue.Body.dataEntrada = dataEntrada;
             inValue.Body.tipoUtenteId = tipoUtenteId;
             inValue.Body.hospitalId = hospitalId;

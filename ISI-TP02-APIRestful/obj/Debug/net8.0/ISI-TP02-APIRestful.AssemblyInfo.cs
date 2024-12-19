@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ISI-TP02-APIRestful")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92f2b68ccd0f3f8bc103cbc1f966f629d1f7740d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+775ece4a4aad9c84388b0c9dc03ab621ec1f805c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ISI-TP02-APIRestful")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ISI-TP02-APIRestful")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

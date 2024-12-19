@@ -291,8 +291,13 @@ namespace ISI_TP02_ASMX
         }
 
         [WebMethod]
-        public bool CreateUtente(string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        public bool CreateUtente(string nome, int NIF, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
         {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new ArgumentException("O nome não pode ser nulo ou vazio.", nameof(nome));
+            if (NIF <= 0)
+                throw new ArgumentException("O NIF deve ser um valor positivo.", nameof(NIF));
+
             string query = "INSERT INTO Utente (Nome, NIF, DataEntrada, TipoUtenteId, HospitalId) " +
                            "VALUES (@Nome, @NIF, @DataEntrada, @TipoUtenteId, @HospitalId)";
 
@@ -305,7 +310,7 @@ namespace ISI_TP02_ASMX
                     using (var command = new SqlCommand(query, connection))
                     {
                         command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
-                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
+                        command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = NIF;
                         command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
                         command.Parameters.Add("@TipoUtenteId", System.Data.SqlDbType.Int).Value = tipoUtenteId;
                         command.Parameters.Add("@HospitalId", System.Data.SqlDbType.Int).Value = hospitalId;
@@ -317,12 +322,14 @@ namespace ISI_TP02_ASMX
             }
             catch (Exception ex)
             {
+             
                 throw new ApplicationException("Error creating Utente.", ex);
             }
         }
 
+
         [WebMethod]
-        public void UpdateUtente(int id, string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
+        public bool UpdateUtente(int id, string nome, int nif, DateTime dataEntrada, int tipoUtenteId, int hospitalId)
         {
             string query = "UPDATE Utente SET Nome = @Nome, NIF = @NIF, DataEntrada = @DataEntrada, " +
                            "TipoUtenteId = @TipoUtenteId, HospitalId = @HospitalId WHERE Id = @Id";
@@ -335,6 +342,7 @@ namespace ISI_TP02_ASMX
 
                     using (var command = new SqlCommand(query, connection))
                     {
+                        // Adicionando parâmetros
                         command.Parameters.Add("@Nome", System.Data.SqlDbType.NVarChar, 100).Value = nome;
                         command.Parameters.Add("@NIF", System.Data.SqlDbType.Int).Value = nif;
                         command.Parameters.Add("@DataEntrada", System.Data.SqlDbType.DateTime).Value = dataEntrada;
@@ -342,12 +350,16 @@ namespace ISI_TP02_ASMX
                         command.Parameters.Add("@HospitalId", System.Data.SqlDbType.Int).Value = hospitalId;
                         command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
 
-                        command.ExecuteNonQuery();
+                        // Executa a query e verifica se linhas foram afetadas
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0; // Retorna true se pelo menos uma linha foi alterada
                     }
                 }
+                return true;
             }
             catch (Exception ex)
             {
+                // Lança uma exceção para log ou tratamento
                 throw new ApplicationException("Error updating Utente.", ex);
             }
         }
