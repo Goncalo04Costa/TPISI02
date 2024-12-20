@@ -221,6 +221,140 @@ namespace AsmxService
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TimeSpan", Namespace="http://tempuri.org/")]
+    public partial class TimeSpan : object
+    {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Consulta", Namespace="http://tempuri.org/")]
+    public partial class Consulta : object
+    {
+        
+        private int IdField;
+        
+        private int UtenteIdField;
+        
+        private int FuncionarioIdField;
+        
+        private int HospitalIdField;
+        
+        private int MedicoIdField;
+        
+        private System.DateTime DataField;
+        
+        private AsmxService.TimeSpan HoraField;
+        
+        private string DescricaoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int UtenteId
+        {
+            get
+            {
+                return this.UtenteIdField;
+            }
+            set
+            {
+                this.UtenteIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public int FuncionarioId
+        {
+            get
+            {
+                return this.FuncionarioIdField;
+            }
+            set
+            {
+                this.FuncionarioIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public int HospitalId
+        {
+            get
+            {
+                return this.HospitalIdField;
+            }
+            set
+            {
+                this.HospitalIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public int MedicoId
+        {
+            get
+            {
+                return this.MedicoIdField;
+            }
+            set
+            {
+                this.MedicoIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public System.DateTime Data
+        {
+            get
+            {
+                return this.DataField;
+            }
+            set
+            {
+                this.DataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=6)]
+        public AsmxService.TimeSpan Hora
+        {
+            get
+            {
+                return this.HoraField;
+            }
+            set
+            {
+                this.HoraField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string Descricao
+        {
+            get
+            {
+                return this.DescricaoField;
+            }
+            set
+            {
+                this.DescricaoField = value;
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AsmxService.HospitalServiceSoap")]
     public interface HospitalServiceSoap
@@ -255,6 +389,30 @@ namespace AsmxService
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteUtente", ReplyAction="*")]
         System.Threading.Tasks.Task<bool> DeleteUtenteAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateConsulta", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.CreateConsultaResponse> CreateConsultaAsync(AsmxService.CreateConsultaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllConsultas", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.GetAllConsultasResponse> GetAllConsultasAsync(AsmxService.GetAllConsultasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteConsulta", ReplyAction="*")]
+        System.Threading.Tasks.Task<bool> DeleteConsultaAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateConsulta", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.UpdateConsultaResponse> UpdateConsultaAsync(AsmxService.UpdateConsultaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConsultaByHospital", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByHospitalResponse> ConsultaByHospitalAsync(AsmxService.ConsultaByHospitalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConsultaByUtente", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByUtenteResponse> ConsultaByUtenteAsync(AsmxService.ConsultaByUtenteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConsultaByFuncionario", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByFuncionarioResponse> ConsultaByFuncionarioAsync(AsmxService.ConsultaByFuncionarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConsultaById", ReplyAction="*")]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByIdResponse> ConsultaByIdAsync(AsmxService.ConsultaByIdRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -917,6 +1075,606 @@ namespace AsmxService
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateConsultaRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateConsulta", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.CreateConsultaRequestBody Body;
+        
+        public CreateConsultaRequest()
+        {
+        }
+        
+        public CreateConsultaRequest(AsmxService.CreateConsultaRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateConsultaRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int utenteId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int funcionarioId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int hospitalId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public int medicoId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public System.DateTime data;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public AsmxService.TimeSpan hora;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string descricao;
+        
+        public CreateConsultaRequestBody()
+        {
+        }
+        
+        public CreateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        {
+            this.utenteId = utenteId;
+            this.funcionarioId = funcionarioId;
+            this.hospitalId = hospitalId;
+            this.medicoId = medicoId;
+            this.data = data;
+            this.hora = hora;
+            this.descricao = descricao;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CreateConsultaResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CreateConsultaResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.CreateConsultaResponseBody Body;
+        
+        public CreateConsultaResponse()
+        {
+        }
+        
+        public CreateConsultaResponse(AsmxService.CreateConsultaResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreateConsultaResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool CreateConsultaResult;
+        
+        public CreateConsultaResponseBody()
+        {
+        }
+        
+        public CreateConsultaResponseBody(bool CreateConsultaResult)
+        {
+            this.CreateConsultaResult = CreateConsultaResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllConsultasRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllConsultas", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetAllConsultasRequestBody Body;
+        
+        public GetAllConsultasRequest()
+        {
+        }
+        
+        public GetAllConsultasRequest(AsmxService.GetAllConsultasRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAllConsultasRequestBody
+    {
+        
+        public GetAllConsultasRequestBody()
+        {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAllConsultasResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllConsultasResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.GetAllConsultasResponseBody Body;
+        
+        public GetAllConsultasResponse()
+        {
+        }
+        
+        public GetAllConsultasResponse(AsmxService.GetAllConsultasResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAllConsultasResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Consulta[] GetAllConsultasResult;
+        
+        public GetAllConsultasResponseBody()
+        {
+        }
+        
+        public GetAllConsultasResponseBody(AsmxService.Consulta[] GetAllConsultasResult)
+        {
+            this.GetAllConsultasResult = GetAllConsultasResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateConsultaRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateConsulta", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.UpdateConsultaRequestBody Body;
+        
+        public UpdateConsultaRequest()
+        {
+        }
+        
+        public UpdateConsultaRequest(AsmxService.UpdateConsultaRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateConsultaRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int utenteId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int funcionarioId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int hospitalId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public int medicoId;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public System.DateTime data;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public AsmxService.TimeSpan hora;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string descricao;
+        
+        public UpdateConsultaRequestBody()
+        {
+        }
+        
+        public UpdateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        {
+            this.utenteId = utenteId;
+            this.funcionarioId = funcionarioId;
+            this.hospitalId = hospitalId;
+            this.medicoId = medicoId;
+            this.data = data;
+            this.hora = hora;
+            this.descricao = descricao;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateConsultaResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateConsultaResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.UpdateConsultaResponseBody Body;
+        
+        public UpdateConsultaResponse()
+        {
+        }
+        
+        public UpdateConsultaResponse(AsmxService.UpdateConsultaResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateConsultaResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool UpdateConsultaResult;
+        
+        public UpdateConsultaResponseBody()
+        {
+        }
+        
+        public UpdateConsultaResponseBody(bool UpdateConsultaResult)
+        {
+            this.UpdateConsultaResult = UpdateConsultaResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByHospitalRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByHospital", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByHospitalRequestBody Body;
+        
+        public ConsultaByHospitalRequest()
+        {
+        }
+        
+        public ConsultaByHospitalRequest(AsmxService.ConsultaByHospitalRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByHospitalRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int hospitalId;
+        
+        public ConsultaByHospitalRequestBody()
+        {
+        }
+        
+        public ConsultaByHospitalRequestBody(int hospitalId)
+        {
+            this.hospitalId = hospitalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByHospitalResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByHospitalResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByHospitalResponseBody Body;
+        
+        public ConsultaByHospitalResponse()
+        {
+        }
+        
+        public ConsultaByHospitalResponse(AsmxService.ConsultaByHospitalResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByHospitalResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Consulta[] ConsultaByHospitalResult;
+        
+        public ConsultaByHospitalResponseBody()
+        {
+        }
+        
+        public ConsultaByHospitalResponseBody(AsmxService.Consulta[] ConsultaByHospitalResult)
+        {
+            this.ConsultaByHospitalResult = ConsultaByHospitalResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByUtenteRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByUtente", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByUtenteRequestBody Body;
+        
+        public ConsultaByUtenteRequest()
+        {
+        }
+        
+        public ConsultaByUtenteRequest(AsmxService.ConsultaByUtenteRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByUtenteRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int utenteId;
+        
+        public ConsultaByUtenteRequestBody()
+        {
+        }
+        
+        public ConsultaByUtenteRequestBody(int utenteId)
+        {
+            this.utenteId = utenteId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByUtenteResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByUtenteResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByUtenteResponseBody Body;
+        
+        public ConsultaByUtenteResponse()
+        {
+        }
+        
+        public ConsultaByUtenteResponse(AsmxService.ConsultaByUtenteResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByUtenteResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Consulta[] ConsultaByUtenteResult;
+        
+        public ConsultaByUtenteResponseBody()
+        {
+        }
+        
+        public ConsultaByUtenteResponseBody(AsmxService.Consulta[] ConsultaByUtenteResult)
+        {
+            this.ConsultaByUtenteResult = ConsultaByUtenteResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByFuncionarioRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByFuncionario", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByFuncionarioRequestBody Body;
+        
+        public ConsultaByFuncionarioRequest()
+        {
+        }
+        
+        public ConsultaByFuncionarioRequest(AsmxService.ConsultaByFuncionarioRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByFuncionarioRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int funcionarioId;
+        
+        public ConsultaByFuncionarioRequestBody()
+        {
+        }
+        
+        public ConsultaByFuncionarioRequestBody(int funcionarioId)
+        {
+            this.funcionarioId = funcionarioId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByFuncionarioResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByFuncionarioResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByFuncionarioResponseBody Body;
+        
+        public ConsultaByFuncionarioResponse()
+        {
+        }
+        
+        public ConsultaByFuncionarioResponse(AsmxService.ConsultaByFuncionarioResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByFuncionarioResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Consulta[] ConsultaByFuncionarioResult;
+        
+        public ConsultaByFuncionarioResponseBody()
+        {
+        }
+        
+        public ConsultaByFuncionarioResponseBody(AsmxService.Consulta[] ConsultaByFuncionarioResult)
+        {
+            this.ConsultaByFuncionarioResult = ConsultaByFuncionarioResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByIdRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaById", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByIdRequestBody Body;
+        
+        public ConsultaByIdRequest()
+        {
+        }
+        
+        public ConsultaByIdRequest(AsmxService.ConsultaByIdRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByIdRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        public ConsultaByIdRequestBody()
+        {
+        }
+        
+        public ConsultaByIdRequestBody(int id)
+        {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaByIdResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaByIdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public AsmxService.ConsultaByIdResponseBody Body;
+        
+        public ConsultaByIdResponse()
+        {
+        }
+        
+        public ConsultaByIdResponse(AsmxService.ConsultaByIdResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class ConsultaByIdResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public AsmxService.Consulta ConsultaByIdResult;
+        
+        public ConsultaByIdResponseBody()
+        {
+        }
+        
+        public ConsultaByIdResponseBody(AsmxService.Consulta ConsultaByIdResult)
+        {
+            this.ConsultaByIdResult = ConsultaByIdResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface HospitalServiceSoapChannel : AsmxService.HospitalServiceSoap, System.ServiceModel.IClientChannel
     {
@@ -1087,6 +1845,120 @@ namespace AsmxService
         public System.Threading.Tasks.Task<bool> DeleteUtenteAsync(int id)
         {
             return base.Channel.DeleteUtenteAsync(id);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.CreateConsultaResponse> AsmxService.HospitalServiceSoap.CreateConsultaAsync(AsmxService.CreateConsultaRequest request)
+        {
+            return base.Channel.CreateConsultaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.CreateConsultaResponse> CreateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        {
+            AsmxService.CreateConsultaRequest inValue = new AsmxService.CreateConsultaRequest();
+            inValue.Body = new AsmxService.CreateConsultaRequestBody();
+            inValue.Body.utenteId = utenteId;
+            inValue.Body.funcionarioId = funcionarioId;
+            inValue.Body.hospitalId = hospitalId;
+            inValue.Body.medicoId = medicoId;
+            inValue.Body.data = data;
+            inValue.Body.hora = hora;
+            inValue.Body.descricao = descricao;
+            return ((AsmxService.HospitalServiceSoap)(this)).CreateConsultaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.GetAllConsultasResponse> AsmxService.HospitalServiceSoap.GetAllConsultasAsync(AsmxService.GetAllConsultasRequest request)
+        {
+            return base.Channel.GetAllConsultasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.GetAllConsultasResponse> GetAllConsultasAsync()
+        {
+            AsmxService.GetAllConsultasRequest inValue = new AsmxService.GetAllConsultasRequest();
+            inValue.Body = new AsmxService.GetAllConsultasRequestBody();
+            return ((AsmxService.HospitalServiceSoap)(this)).GetAllConsultasAsync(inValue);
+        }
+        
+        public System.Threading.Tasks.Task<bool> DeleteConsultaAsync(int id)
+        {
+            return base.Channel.DeleteConsultaAsync(id);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.UpdateConsultaResponse> AsmxService.HospitalServiceSoap.UpdateConsultaAsync(AsmxService.UpdateConsultaRequest request)
+        {
+            return base.Channel.UpdateConsultaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.UpdateConsultaResponse> UpdateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        {
+            AsmxService.UpdateConsultaRequest inValue = new AsmxService.UpdateConsultaRequest();
+            inValue.Body = new AsmxService.UpdateConsultaRequestBody();
+            inValue.Body.utenteId = utenteId;
+            inValue.Body.funcionarioId = funcionarioId;
+            inValue.Body.hospitalId = hospitalId;
+            inValue.Body.medicoId = medicoId;
+            inValue.Body.data = data;
+            inValue.Body.hora = hora;
+            inValue.Body.descricao = descricao;
+            return ((AsmxService.HospitalServiceSoap)(this)).UpdateConsultaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByHospitalResponse> AsmxService.HospitalServiceSoap.ConsultaByHospitalAsync(AsmxService.ConsultaByHospitalRequest request)
+        {
+            return base.Channel.ConsultaByHospitalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.ConsultaByHospitalResponse> ConsultaByHospitalAsync(int hospitalId)
+        {
+            AsmxService.ConsultaByHospitalRequest inValue = new AsmxService.ConsultaByHospitalRequest();
+            inValue.Body = new AsmxService.ConsultaByHospitalRequestBody();
+            inValue.Body.hospitalId = hospitalId;
+            return ((AsmxService.HospitalServiceSoap)(this)).ConsultaByHospitalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByUtenteResponse> AsmxService.HospitalServiceSoap.ConsultaByUtenteAsync(AsmxService.ConsultaByUtenteRequest request)
+        {
+            return base.Channel.ConsultaByUtenteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.ConsultaByUtenteResponse> ConsultaByUtenteAsync(int utenteId)
+        {
+            AsmxService.ConsultaByUtenteRequest inValue = new AsmxService.ConsultaByUtenteRequest();
+            inValue.Body = new AsmxService.ConsultaByUtenteRequestBody();
+            inValue.Body.utenteId = utenteId;
+            return ((AsmxService.HospitalServiceSoap)(this)).ConsultaByUtenteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByFuncionarioResponse> AsmxService.HospitalServiceSoap.ConsultaByFuncionarioAsync(AsmxService.ConsultaByFuncionarioRequest request)
+        {
+            return base.Channel.ConsultaByFuncionarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.ConsultaByFuncionarioResponse> ConsultaByFuncionarioAsync(int funcionarioId)
+        {
+            AsmxService.ConsultaByFuncionarioRequest inValue = new AsmxService.ConsultaByFuncionarioRequest();
+            inValue.Body = new AsmxService.ConsultaByFuncionarioRequestBody();
+            inValue.Body.funcionarioId = funcionarioId;
+            return ((AsmxService.HospitalServiceSoap)(this)).ConsultaByFuncionarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AsmxService.ConsultaByIdResponse> AsmxService.HospitalServiceSoap.ConsultaByIdAsync(AsmxService.ConsultaByIdRequest request)
+        {
+            return base.Channel.ConsultaByIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AsmxService.ConsultaByIdResponse> ConsultaByIdAsync(int id)
+        {
+            AsmxService.ConsultaByIdRequest inValue = new AsmxService.ConsultaByIdRequest();
+            inValue.Body = new AsmxService.ConsultaByIdRequestBody();
+            inValue.Body.id = id;
+            return ((AsmxService.HospitalServiceSoap)(this)).ConsultaByIdAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

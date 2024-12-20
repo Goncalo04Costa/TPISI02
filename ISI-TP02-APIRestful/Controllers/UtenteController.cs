@@ -5,6 +5,8 @@ using WCFHospitalService;
 
 namespace ISI_TP02_APIRestful.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UtenteController : Controller
     {
         public HospitalServiceSoapClient asmxClient;
@@ -60,6 +62,9 @@ namespace ISI_TP02_APIRestful.Controllers
                 return StatusCode(500, $"Erro interno: {ex.Message}");
             }
         }
+
+
+
 
         [HttpPost("create")]
         public async Task<IActionResult> Create(AsmxService.Utente utente)
