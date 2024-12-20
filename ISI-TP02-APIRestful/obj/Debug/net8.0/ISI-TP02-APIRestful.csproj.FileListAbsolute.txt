@@ -233,3 +233,10 @@ C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Sys
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Connected Services\WCFHospitalService\ConnectedService.json
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-APIRestful\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,8 +1,24 @@
 [
   {
-    "ContainingType": "ISI_TP02_APIRestful.Controllers.HospitalController",
-    "Method": "delete",
-    "RelativePath": "api/Hospital/delete",
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
+    "Method": "Create",
+    "RelativePath": "api/Consulta/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consulta",
+        "Type": "AsmxService.Consulta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
+    "Method": "Delete",
+    "RelativePath": "api/Consulta/delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -11,6 +27,144 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
+    "Method": "Obter",
+    "RelativePath": "api/Consulta/obter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
+    "Method": "Update",
+    "RelativePath": "api/Consulta/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consulta",
+        "Type": "AsmxService.Consulta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.FuncionarioController",
+    "Method": "Create",
+    "RelativePath": "api/Funcionario/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "funcionario",
+        "Type": "AsmxService.Funcionario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.FuncionarioController",
+    "Method": "Delete",
+    "RelativePath": "api/Funcionario/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.FuncionarioController",
+    "Method": "LoginFuncionario",
+    "RelativePath": "api/Funcionario/RealizarLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ISI_TP02_APIRestful.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.FuncionarioController",
+    "Method": "Update",
+    "RelativePath": "api/Funcionario/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "funcionario",
+        "Type": "AsmxService.Funcionario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.UtenteController",
+    "Method": "Create",
+    "RelativePath": "api/Utente/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "utente",
+        "Type": "AsmxService.Utente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.UtenteController",
+    "Method": "Delete",
+    "RelativePath": "api/Utente/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.UtenteController",
+    "Method": "Update",
+    "RelativePath": "api/Utente/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "utente",
+        "Type": "AsmxService.Utente",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

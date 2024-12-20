@@ -1,6 +1,7 @@
 ﻿using AsmxService;
 using ISI_TP02_APIRestful.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using System.ServiceModel;
 using WCFHospitalService;
 
@@ -18,7 +19,14 @@ namespace ISI_TP02_APIRestful.Controllers
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
         }
 
-
+        [HttpGet("obter")]
+        public async Task<IActionResult> Obter()
+        {
+            var request = asmxClient.GetAllConsultasAsync();
+            if(request!=null)
+                return Ok(request);
+            return NotFound();
+        }
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete(int id)
         {

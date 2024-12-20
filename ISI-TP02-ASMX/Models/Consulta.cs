@@ -11,7 +11,7 @@ namespace ISITP02.Models
         public int HospitalId { get; set; }
         public int MedicoId { get; set; }
         public DateTime Data { get; set; }
-        public TimeSpan Hora { get; set; }
+        public TimeSpan Hora { get; set; }      
         public string Descricao { get; set; }
     }
 }
