@@ -39,32 +39,6 @@ public interface IHospitalService
     Hospital GetHospitalByLoc(string localização);
 
     [OperationContract]
-    bool CreateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId,
-                           DateTime data, TimeSpan hora, string descricao);
-
-    [OperationContract]
-    List<Consulta> GetAllConsultas();
-
-    [OperationContract]
-    bool deleteConsulta(int id);
-
-    [OperationContract]
-    bool UpdateConsulta(int UtenteId, int FuncionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao);
-
-    [OperationContract]
-    Consulta ConsultaById(int id);  
-
-    [OperationContract]
-    List<Consulta> ConsultaByHospital(int hospitalId); 
-
-    [OperationContract]
-    List<Consulta> ConsultaByUtente(int utenteId);
-
-    [OperationContract]
-    List<Consulta> ConsultaByFuncionario(int funcionarioId);
-
-
-    [OperationContract]
      Task<Funcionario> AutenticarUtilizador(Funcionario f);
 
 }

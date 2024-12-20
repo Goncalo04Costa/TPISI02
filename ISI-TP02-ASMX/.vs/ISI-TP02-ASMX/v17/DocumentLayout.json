@@ -80,7 +80,7 @@
               "RelativeDocumentMoniker": "Services\\HospitalService.asmx.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-ASMX\\Services\\HospitalService.asmx.cs",
               "RelativeToolTip": "Services\\HospitalService.asmx.cs",
-              "ViewState": "AQIAAE4BAAAAAAAAAAAAAGUBAAAcAAAA",
+              "ViewState": "AQIAAHMCAAAAAAAAAAAAwKsCAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T15:31:20.752Z",
               "EditorCaption": ""
@@ -168,8 +168,7 @@
               "RelativeToolTip": "Models\\TipoUtente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:40:07.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:40:07.79Z"
             },
             {
               "$type": "Document",
@@ -181,8 +180,7 @@
               "RelativeToolTip": "Models\\Utente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:39:37.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:39:37.908Z"
             },
             {
               "$type": "Document",
@@ -218,8 +216,7 @@
               "RelativeToolTip": "Models\\funcionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:32:31.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T15:32:31.85Z"
             }
           ]
         }

@@ -389,5 +389,302 @@ namespace ISI_TP02_ASMX
                 throw new ApplicationException("Error deleting Utente.", ex);
             }
         }
+        [WebMethod]
+        public bool CreateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"INSERT INTO Consulta (Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao) 
+                                 VALUES (@Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @hora, @descricao)";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Utenteid", utenteId);
+                        command.Parameters.AddWithValue("@Funcionárioid", funcionarioId);
+                        command.Parameters.AddWithValue("@Hospitalid", hospitalId);
+                        command.Parameters.AddWithValue("@Medicoid", medicoId);
+                        command.Parameters.AddWithValue("@data", data);
+                        command.Parameters.AddWithValue("@hora", hora);
+                        command.Parameters.AddWithValue("@descricao", descricao);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao criar consulta", ex);
+            }
+        }
+
+        [WebMethod]
+        public List<Consulta> GetAllConsultas()
+        {
+            List<Consulta> consultas = new List<Consulta>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM Consulta";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            consultas.Add(new Consulta
+                            {
+                                Id = (int)reader["id"],
+                                UtenteId = (int)reader["Utenteid"],
+                                FuncionarioId = (int)reader["Funcionárioid"],
+                                HospitalId = (int)reader["Hospitalid"],
+                                MedicoId = (int)reader["Medicoid"],
+                                Data = (DateTime)reader["data"],
+                                Hora = (TimeSpan)reader["hora"],
+                                Descricao = reader["descricao"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro a pesquisar consultas", ex);
+            }
+            return consultas;
+        }
+
+        [WebMethod]
+        public bool DeleteConsulta(int id)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "DELETE FROM Consulta WHERE id = @id";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao eliminar consulta", ex);
+            }
+        }
+
+        [WebMethod]
+        public bool UpdateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "UPDATE Consulta SET FuncionarioId = @FuncionarioId, HospitalId = @HospitalId, MedicoId = @MedicoId, Data = @Data, Hora = @Hora, Descricao = @Descricao WHERE UtenteId = @UtenteId";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UtenteId", utenteId);
+                        command.Parameters.AddWithValue("@FuncionarioId", funcionarioId);
+                        command.Parameters.AddWithValue("@HospitalId", hospitalId);
+                        command.Parameters.AddWithValue("@MedicoId", medicoId);
+                        command.Parameters.AddWithValue("@Data", data);
+                        command.Parameters.AddWithValue("@Hora", hora);
+                        command.Parameters.AddWithValue("@Descricao", descricao);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao atualizar consulta", ex);
+            }
+        }
+
+        [WebMethod]
+        public List<Consulta> ConsultaByHospital(int hospitalId)
+        {
+            List<Consulta> consultas = new List<Consulta>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM Consulta WHERE Hospitalid = @Hospitalid";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Hospitalid", hospitalId);
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                consultas.Add(new Consulta
+                                {
+                                    Id = (int)reader["id"],
+                                    UtenteId = (int)reader["Utenteid"],
+                                    FuncionarioId = (int)reader["Funcionárioid"],
+                                    HospitalId = (int)reader["Hospitalid"],
+                                    MedicoId = (int)reader["Medicoid"],
+                                    Data = (DateTime)reader["data"],
+                                    Hora = (TimeSpan)reader["hora"],
+                                    Descricao = reader["descricao"].ToString()
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao procurar consultas por hospital", ex);
+            }
+            return consultas;
+        }
+
+        [WebMethod]
+        public List<Consulta> ConsultaByUtente(int utenteId)
+        {
+            List<Consulta> consultas = new List<Consulta>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                                 FROM Consulta 
+                                 WHERE Utenteid = @Utenteid";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Utenteid", utenteId);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                consultas.Add(new Consulta
+                                {
+                                    Id = reader.GetInt32(0),
+                                    UtenteId = reader.GetInt32(1),
+                                    FuncionarioId = reader.GetInt32(2),
+                                    HospitalId = reader.GetInt32(3),
+                                    MedicoId = reader.GetInt32(4),
+                                    Data = reader.GetDateTime(5),
+                                    Hora = reader.GetTimeSpan(6),
+                                    Descricao = reader.GetString(7)
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao buscar consultas pelo utente", ex);
+            }
+            return consultas;
+        }
+
+        [WebMethod]
+        public List<Consulta> ConsultaByFuncionario(int funcionarioId)
+        {
+            List<Consulta> consultas = new List<Consulta>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                                 FROM Consulta 
+                                 WHERE Funcionárioid = @Funcionárioid";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Funcionárioid", funcionarioId);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                consultas.Add(new Consulta
+                                {
+                                    Id = reader.GetInt32(0),
+                                    UtenteId = reader.GetInt32(1),
+                                    FuncionarioId = reader.GetInt32(2),
+                                    HospitalId = reader.GetInt32(3),
+                                    MedicoId = reader.GetInt32(4),
+                                    Data = reader.GetDateTime(5),
+                                    Hora = reader.GetTimeSpan(6),
+                                    Descricao = reader.GetString(7)
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao buscar consultas pelo funcionário", ex);
+            }
+            return consultas;
+        }
+
+        [WebMethod]
+        public Consulta ConsultaById(int id)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                                 FROM Consulta 
+                                 WHERE id = @id";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new Consulta
+                                {
+                                    Id = reader.GetInt32(0),
+                                    UtenteId = reader.GetInt32(1),
+                                    FuncionarioId = reader.GetInt32(2),
+                                    HospitalId = reader.GetInt32(3),
+                                    MedicoId = reader.GetInt32(4),
+                                    Data = reader.GetDateTime(5),
+                                    Hora = reader.GetTimeSpan(6),
+                                    Descricao = reader.GetString(7)
+                                };
+                            }
+                        }
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Erro ao buscar consulta por ID", ex);
+            }
+        }
     }
 }
