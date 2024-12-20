@@ -22,7 +22,14 @@ namespace ISI_TP02_APIRestful.Controllers
             var endpointAddress = new EndpointAddress("https://localhost:44347/Services/HospitalService.asmx");
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
         }
-
+        [HttpGet("obter")]
+        public async Task<IActionResult> Obter()
+        {
+            var request = await asmxClient.GetAllFuncionariosAsync();
+            if (request != null)
+                return Ok(request.Body.GetAllFuncionariosResult.ToList());
+            return NotFound();
+        }
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete(int  id)
         {

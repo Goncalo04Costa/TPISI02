@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,16 +14,23 @@ namespace ISI_TP02_Forms
 {
     public partial class Form1 : Form
     {
-        private HttpClient HttpClient;
+        private HttpClient HttpClient = new HttpClient();
         public Form1()
         {
             InitializeComponent();
             HttpClient.BaseAddress = new Uri("https://localhost:7275");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            HttpResponseMessage request = HttpClient.GetAsync("")
+            HttpResponseMessage request = await HttpClient.GetAsync("api/Funcionario/obter");
+            request.EnsureSuccessStatusCode();
+
+            var requestContent = await request.Content.ReadAsStringAsync();
+            List<Funcionario> list = JsonSerializer.Deserialize<List<Funcionario>>(requestContent);
+
+
+            dataGridView1.DataSource = list;
         }
     }
 }
