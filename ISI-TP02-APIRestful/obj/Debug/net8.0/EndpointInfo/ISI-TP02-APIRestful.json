@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Consulta/obter": {
+      "get": {
+        "tags": [
+          "Consulta"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Consulta/delete": {
       "delete": {
         "tags": [
@@ -209,6 +221,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utente/obter": {
+      "get": {
+        "tags": [
+          "Utente"
+        ],
         "responses": {
           "200": {
             "description": "OK"

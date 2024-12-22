@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +23,28 @@
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\jwt\\obterjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:jwt\\obterjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\services\\hospitalservice.asmx||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:services\\hospitalservice.asmx||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\registarconsultareq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\registarconsultareq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\jwt\\obterjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:jwt\\obterjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\connected services\\asmxservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,69 +102,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ConsultaController.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
               "RelativeDocumentMoniker": "Controllers\\ConsultaController.cs",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
               "RelativeToolTip": "Controllers\\ConsultaController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBUAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T10:43:03.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "obterJWT.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\JWT\\obterJWT.cs",
-              "RelativeDocumentMoniker": "JWT\\obterJWT.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\JWT\\obterJWT.cs",
-              "RelativeToolTip": "JWT\\obterJWT.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T17:38:51.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Consulta.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
-              "RelativeDocumentMoniker": "Models\\Consulta.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
-              "RelativeToolTip": "Models\\Consulta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T16:43:36.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBcAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T16:35:06.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FuncionarioController.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\FuncionarioController.cs",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
               "RelativeToolTip": "Controllers\\FuncionarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T15:34:00.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UtenteController.cs",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UtenteController.cs",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
+              "RelativeToolTip": "Controllers\\UtenteController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T00:09:09.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "obterJWT.cs",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\JWT\\obterJWT.cs",
+              "RelativeDocumentMoniker": "JWT\\obterJWT.cs",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\JWT\\obterJWT.cs",
+              "RelativeToolTip": "JWT\\obterJWT.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:38:51.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HospitalService.asmx",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\services\\HospitalService.asmx",
+              "RelativeDocumentMoniker": "services\\HospitalService.asmx",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\services\\HospitalService.asmx",
+              "RelativeToolTip": "services\\HospitalService.asmx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2024-12-22T21:28:04.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
+              "RelativeDocumentMoniker": "Models\\Consulta.cs",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
+              "RelativeToolTip": "Models\\Consulta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:43:36.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:35:06.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Reference.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\WCFHospitalService\\Reference.cs",
               "RelativeDocumentMoniker": "Connected Services\\WCFHospitalService\\Reference.cs",
@@ -172,31 +205,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UtenteController.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UtenteController.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
-              "RelativeToolTip": "Controllers\\UtenteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T00:09:09.383Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "RegistarConsultaReq.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\RegistarConsultaReq.cs",
               "RelativeDocumentMoniker": "Models\\RegistarConsultaReq.cs",
               "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\RegistarConsultaReq.cs",
               "RelativeToolTip": "Models\\RegistarConsultaReq.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAArwBMAAAAAAAAA",
+              "ViewState": "AgIAAAEAAAAAAAAAAAArwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T11:38:49.467Z"
+              "WhenOpened": "2024-12-19T11:38:49.467Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "Models\\Funcionario.cs",
@@ -209,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Login.cs",
               "RelativeDocumentMoniker": "Models\\Login.cs",
@@ -221,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Reference.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\AsmxService\\Reference.cs",
               "RelativeDocumentMoniker": "Connected Services\\AsmxService\\Reference.cs",
@@ -233,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Medico.cs",
               "RelativeDocumentMoniker": "Models\\Medico.cs",
@@ -245,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TipoMedico.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\TipoMedico.cs",
               "RelativeDocumentMoniker": "Models\\TipoMedico.cs",
@@ -257,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TipoUtente.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\TipoUtente.cs",
               "RelativeDocumentMoniker": "Models\\TipoUtente.cs",
@@ -269,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Utente.cs",
               "RelativeDocumentMoniker": "Models\\Utente.cs",
@@ -281,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TipoFuncionario.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\TipoFuncionario.cs",
               "RelativeDocumentMoniker": "Models\\TipoFuncionario.cs",
@@ -293,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Hospital.cs",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Hospital.cs",
               "RelativeDocumentMoniker": "Models\\Hospital.cs",
@@ -305,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",

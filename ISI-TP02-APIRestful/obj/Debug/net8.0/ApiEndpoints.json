@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
+    "Method": "Obter",
+    "RelativePath": "api/Consulta/obter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.ConsultaController",
     "Method": "Update",
     "RelativePath": "api/Consulta/update",
     "HttpMethod": "PUT",
@@ -151,6 +161,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.UtenteController",
+    "Method": "Obter",
+    "RelativePath": "api/Utente/obter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -21,7 +21,7 @@ namespace ISI_TP02_Forms
             HttpClient.BaseAddress = new Uri("https://localhost:7275");
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e) //OBTER FUNCIONARIO
         {
             HttpResponseMessage request = await HttpClient.GetAsync("api/Funcionario/obter");
             request.EnsureSuccessStatusCode();
@@ -32,5 +32,17 @@ namespace ISI_TP02_Forms
 
             dataGridView1.DataSource = list;
         }
+
+        private async void button2_Click(object sender, EventArgs e) //OBTER CONSULTAS
+        {
+            HttpResponseMessage request = await HttpClient.GetAsync("api/Consulta/obter");
+            request.EnsureSuccessStatusCode();
+        }
+
+        private async void button3_Click(object sender, EventArgs e) //OBTER UTENTES
+        {
+
+        }
+
     }
 }
