@@ -67,7 +67,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 return BadRequest("Os dados da consulta são obrigatórios.");
 
             // Validação básica dos campos necessários
-            if (consulta.UtenteId <= 0 || consulta.FuncionarioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
+            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
                 return BadRequest("Dados da consulta inválidos.");
 
             try
@@ -75,7 +75,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 // Exemplo de chamada ao serviço ASMX para atualizar consulta
                 var request = await asmxClient.UpdateConsultaAsync(
                     consulta.UtenteId,
-                    consulta.FuncionarioId,
+                    consulta.FuncionárioId,
                     consulta.HospitalId,
                     consulta.MedicoId,
                     consulta.Data,
@@ -101,7 +101,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 return BadRequest("Os dados da consulta são obrigatórios.");
 
             // Validação básica dos campos necessários
-            if (consulta.UtenteId <= 0 || consulta.FuncionarioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
+            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
                 return BadRequest("Dados da consulta inválidos.");
 
             try
@@ -109,7 +109,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 // Passando os campos individuais do objeto 'consulta' para o método
                 var request = await asmxClient.CreateConsultaAsync(
                     consulta.UtenteId,
-                    consulta.FuncionarioId,
+                    consulta.FuncionárioId,
                     consulta.HospitalId,
                     consulta.MedicoId,
                     consulta.Data,

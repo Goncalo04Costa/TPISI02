@@ -238,11 +238,19 @@ namespace AsmxService
         
         private int UtenteIdField;
         
-        private int FuncionarioIdField;
+        private AsmxService.Utente UtenteField;
+        
+        private int FuncionárioIdField;
+        
+        private AsmxService.Funcionario FuncionarioField;
         
         private int HospitalIdField;
         
+        private AsmxService.Hospital HospitalField;
+        
         private int MedicoIdField;
+        
+        private AsmxService.Medico MedicoField;
         
         private System.DateTime DataField;
         
@@ -276,20 +284,46 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public int FuncionarioId
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public AsmxService.Utente Utente
         {
             get
             {
-                return this.FuncionarioIdField;
+                return this.UtenteField;
             }
             set
             {
-                this.FuncionarioIdField = value;
+                this.UtenteField = value;
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public int FuncionárioId
+        {
+            get
+            {
+                return this.FuncionárioIdField;
+            }
+            set
+            {
+                this.FuncionárioIdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public AsmxService.Funcionario Funcionario
+        {
+            get
+            {
+                return this.FuncionarioField;
+            }
+            set
+            {
+                this.FuncionarioField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
         public int HospitalId
         {
             get
@@ -302,7 +336,20 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public AsmxService.Hospital Hospital
+        {
+            get
+            {
+                return this.HospitalField;
+            }
+            set
+            {
+                this.HospitalField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=7)]
         public int MedicoId
         {
             get
@@ -315,7 +362,20 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public AsmxService.Medico Medico
+        {
+            get
+            {
+                return this.MedicoField;
+            }
+            set
+            {
+                this.MedicoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
         public System.DateTime Data
         {
             get
@@ -328,7 +388,7 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=6)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=10)]
         public AsmxService.TimeSpan Hora
         {
             get
@@ -341,7 +401,7 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
         public string Descricao
         {
             get
@@ -351,6 +411,110 @@ namespace AsmxService
             set
             {
                 this.DescricaoField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Hospital", Namespace="http://tempuri.org/")]
+    public partial class Hospital : object
+    {
+        
+        private int IdField;
+        
+        private string NomeField;
+        
+        private string LocalizacaoField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Nome
+        {
+            get
+            {
+                return this.NomeField;
+            }
+            set
+            {
+                this.NomeField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string Localizacao
+        {
+            get
+            {
+                return this.LocalizacaoField;
+            }
+            set
+            {
+                this.LocalizacaoField = value;
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Medico", Namespace="http://tempuri.org/")]
+    public partial class Medico : object
+    {
+        
+        private int IdField;
+        
+        private string NomeField;
+        
+        private int TipoMedicoIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Nome
+        {
+            get
+            {
+                return this.NomeField;
+            }
+            set
+            {
+                this.NomeField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int TipoMedicoId
+        {
+            get
+            {
+                return this.TipoMedicoIdField;
+            }
+            set
+            {
+                this.TipoMedicoIdField = value;
             }
         }
     }
