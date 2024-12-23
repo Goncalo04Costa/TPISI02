@@ -4,28 +4,50 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using System.ServiceModel;
 using WCFHospitalService;
+using Microsoft.Extensions.Logging;
 
 namespace ISI_TP02_APIRestful.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
-    public class ConsultaController : Controller
+    public class ConsultaController : ControllerBase
     {
-        public static HospitalServiceSoapClient asmxClient;
+        public HospitalServiceSoapClient asmxClient;
+        private readonly ILogger<ConsultaController> _logger;
 
-        public ConsultaController()
+        public ConsultaController(ILogger<ConsultaController> logger)
         {
             var endpointAddress = new EndpointAddress("https://localhost:44347/Services/HospitalService.asmx");
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
+            _logger = logger;
         }
 
-        [HttpGet("obter")] //adicionei
+
+
+        [HttpGet("obter")]
         public async Task<IActionResult> Obter()
         {
-            var request = await asmxClient.GetAllConsultasAsync();
-            if (request != null)
-                return Ok(request.Body.GetAllConsultasResult.ToList());
-            return NotFound();
+            try
+            {
+                var request = await asmxClient.GetAllConsultasAsync();
+                _logger.LogInformation("Resposta da API ASMX: {Response}", request?.Body);
+
+                if (request != null && request.Body != null && request.Body.GetAllConsultasResult != null)
+                {
+                    _logger.LogInformation("Consultas obtidas com sucesso.");
+                    return Ok(request.Body.GetAllConsultasResult.ToList());
+                }
+
+                _logger.LogWarning("Nenhuma consulta encontrada ou resposta vazia.");
+                return NotFound();
+            }
+            catch (Exception ex)
+            {
+                // Logando a exceção detalhadamente para entender melhor o erro
+                _logger.LogError(ex, "Erro ao obter as consultas. Mensagem de erro: {ErrorMessage}", ex.Message);
+                return StatusCode(500, "Erro interno ao processar a solicitação.");
+            }
         }
 
         [HttpDelete("delete")]

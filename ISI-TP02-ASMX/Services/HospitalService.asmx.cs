@@ -430,23 +430,23 @@ namespace ISI_TP02_ASMX
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT * FROM Consulta";
+                    string query = "SELECT Id, Utenteid, Funcionárioid, Hospitalid, Medicoid, Data, Hora, Descricao FROM Consulta";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
-                        {
-                            consultas.Add(new Consulta
+                        { 
+                            consultas.Add(new Consulta   //..
                             {
-                                Id = (int)reader["id"],
-                                UtenteId = (int)reader["Utenteid"],
-                                FuncionarioId = (int)reader["Funcionárioid"],
-                                HospitalId = (int)reader["Hospitalid"],
-                                MedicoId = (int)reader["Medicoid"],
-                                Data = (DateTime)reader["data"],
-                                Hora = (TimeSpan)reader["hora"],
-                                Descricao = reader["descricao"].ToString()
+                                Id = reader.GetInt32(0),
+                                UtenteId = reader.GetInt32(1),
+                                FuncionárioId = reader.GetInt32(2),
+                                HospitalId = reader.GetInt32(3),
+                                MedicoId = reader.GetInt32(4),
+                                Data = reader.GetDateTime(5),
+                                Hora = reader.IsDBNull(6) ? TimeSpan.Zero : reader.GetDateTime(6).TimeOfDay,
+                                Descricao = reader.GetString(7)
                             });
                         }
                     }
@@ -537,7 +537,7 @@ namespace ISI_TP02_ASMX
                                 {
                                     Id = (int)reader["id"],
                                     UtenteId = (int)reader["Utenteid"],
-                                    FuncionarioId = (int)reader["Funcionárioid"],
+                                    FuncionárioId = (int)reader["Funcionárioid"],
                                     HospitalId = (int)reader["Hospitalid"],
                                     MedicoId = (int)reader["Medicoid"],
                                     Data = (DateTime)reader["data"],
@@ -581,7 +581,7 @@ namespace ISI_TP02_ASMX
                                 {
                                     Id = reader.GetInt32(0),
                                     UtenteId = reader.GetInt32(1),
-                                    FuncionarioId = reader.GetInt32(2),
+                                    FuncionárioId = reader.GetInt32(2),
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
@@ -625,7 +625,7 @@ namespace ISI_TP02_ASMX
                                 {
                                     Id = reader.GetInt32(0),
                                     UtenteId = reader.GetInt32(1),
-                                    FuncionarioId = reader.GetInt32(2),
+                                    FuncionárioId = reader.GetInt32(2),
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
@@ -668,7 +668,7 @@ namespace ISI_TP02_ASMX
                                 {
                                     Id = reader.GetInt32(0),
                                     UtenteId = reader.GetInt32(1),
-                                    FuncionarioId = reader.GetInt32(2),
+                                    FuncionárioId = reader.GetInt32(2),
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),

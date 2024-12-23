@@ -19,7 +19,7 @@ namespace ISI_TP02_APIRestful.Controllers
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
         }
 
-        [HttpGet("obter")] //adicionei
+        [HttpGet("obter")]
         public async Task<IActionResult> Obter()
         {
             var request = await asmxClient.GetAllUtentesAsync();

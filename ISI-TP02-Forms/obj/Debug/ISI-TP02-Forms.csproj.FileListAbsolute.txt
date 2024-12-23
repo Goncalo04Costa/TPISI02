@@ -27,3 +27,5 @@ C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-T
 C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-TP02.FF252DF2.Up2Date
 C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-TP02-Forms.exe
 C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-TP02-Forms.pdb
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI_TP02_Forms.Form2Funcionario.resources
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI_TP02_Forms.Form3Utente.resources

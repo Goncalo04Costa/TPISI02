@@ -20,8 +20,8 @@ namespace ISI_TP02_Forms
         [JsonPropertyName("dataEntrada")]
         public DateTime DataEntrada { get; set; }
 
-        [JsonPropertyName("tipoUtente")]
-        public int TipoUtente { get; set; }
+        [JsonPropertyName("tipoUtenteId")]
+        public int TipoUtenteId { get; set; }
 
         [JsonPropertyName("hospitalId")]
         public int HospitalId { get; set; }

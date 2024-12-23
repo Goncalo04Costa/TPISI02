@@ -26,9 +26,10 @@ namespace ISI_TP02_Forms
         [JsonPropertyName("password")]
 
         public string Password { get; set; }
-        [JsonPropertyName("tipoFuncionárioid")]
 
-        public int TipoFuncionárioid { get; set; }
+        [JsonPropertyName("tipoFuncionárioId")]
+        public int TipoFuncionárioId { get; set; }
+
     }
 }
 

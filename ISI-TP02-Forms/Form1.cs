@@ -33,16 +33,41 @@ namespace ISI_TP02_Forms
             dataGridView1.DataSource = list;
         }
 
-        private async void button2_Click(object sender, EventArgs e) //OBTER CONSULTAS
+        private async void button2_Click_1(object sender, EventArgs e) //OBTER CONSULTAS
         {
             HttpResponseMessage request = await HttpClient.GetAsync("api/Consulta/obter");
             request.EnsureSuccessStatusCode();
+
+            var requestContent = await request.Content.ReadAsStringAsync();
+            List<Consulta> list = JsonSerializer.Deserialize<List<Consulta>>(requestContent);
+
+
+            dataGridView1.DataSource = list;
         }
 
-        private async void button3_Click(object sender, EventArgs e) //OBTER UTENTES
+        private async void button3_Click_1(object sender, EventArgs e) //OBTER UTENTES
         {
+            HttpResponseMessage request = await HttpClient.GetAsync("api/Utente/obter");
+            request.EnsureSuccessStatusCode();
 
+            var requestContent = await request.Content.ReadAsStringAsync();
+            List<Utente> list = JsonSerializer.Deserialize<List<Utente>>(requestContent);
+
+
+            dataGridView1.DataSource = list;
         }
 
+        private async void button4_Click(object sender, EventArgs e) //adicionar funcinario
+        {
+            // Cria uma instância de Form2
+            Form2Funcionario form2 = new Form2Funcionario();
+
+            // Exibe o Form2
+            form2.Show();
+
+            // Oculta o Form1 (se você não quiser fechá-lo completamente)
+            this.Hide();
+        }
+        
     }
 }

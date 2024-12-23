@@ -1,21 +1,33 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Xml.Serialization;
 
 namespace ISITP02.Models
 {
     public class Consulta
     {
+        [XmlElement("Id")]
         public int Id { get; set; }
+
+        [XmlElement("UtenteId")]
         public int UtenteId { get; set; }
-        public Utente Utente { get; set; }
-        public int FuncionarioId { get; set; }
-        public Funcionario Funcionario { get; set; }
+
+        [XmlElement("FuncionárioId")]
+        public int FuncionárioId { get; set; }
+
+        [XmlElement("HospitalId")]
         public int HospitalId { get; set; }
-        public Hospital Hospital { get; set; }
+
+        [XmlElement("MedicoId")]
         public int MedicoId { get; set; }
-        public Medico Medico { get; set; }
+
+        [XmlElement("Data")]
         public DateTime Data { get; set; }
+
+        [XmlElement("Hora")]
         public TimeSpan Hora { get; set; }
+
+        [XmlElement("Descricao")]
         public string Descricao { get; set; }
     }
 }

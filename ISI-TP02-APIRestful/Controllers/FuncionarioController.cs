@@ -30,6 +30,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 return Ok(request.Body.GetAllFuncionariosResult.ToList());
             return NotFound();
         }
+
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete(int  id)
         {
