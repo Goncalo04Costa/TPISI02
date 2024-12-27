@@ -15,7 +15,8 @@ namespace ISI_TP02_APIRestful.Controllers
 
         public UtenteController()
         {
-            var endpointAddress = new EndpointAddress("https://localhost:44347/Services/HospitalService.asmx");
+            //var endpointAddress = new EndpointAddress("https://localhost:44347/Services/HospitalService.asmx");
+            var endpointAddress = new EndpointAddress("https://tpisi-asmx-d4bxgafdhpahbdgx.westeurope-01.azurewebsites.net");
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
         }
 

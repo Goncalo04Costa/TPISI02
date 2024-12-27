@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ISI-TP02-APIRestful.props" />
+</Project>
