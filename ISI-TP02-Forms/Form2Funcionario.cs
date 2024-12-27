@@ -74,5 +74,10 @@ namespace ISI_TP02_Forms
             // Oculta Form2 (se você não quiser fechá-lo completamente)
             this.Hide();
         }
+
+        private void Form2Funcionario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

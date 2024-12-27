@@ -14,18 +14,25 @@ namespace ISI_TP02_Forms
         [JsonPropertyName("utenteId")]
 
         public int UtenteId { get; set; }
-        [JsonPropertyName("funcionarioId")]
+        [JsonPropertyName("funcionárioId")]
 
-        public int FuncionarioId { get; set; }
+        public int FuncionárioId { get; set; }
+
+        [JsonPropertyName("hospitalId")]
+
+        public int HospitalId { get; set; }
+
         [JsonPropertyName("medicoId")]
-
         public int MedicoId { get; set; }
+
         [JsonPropertyName("data")]
 
         public DateTime Data { get; set; }
+
         [JsonPropertyName("hora")]
 
         public DateTime Hora { get; set; }
+
         [JsonPropertyName("descricao")]
 
         public string Descricao { get; set; }

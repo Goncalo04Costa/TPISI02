@@ -68,6 +68,18 @@ namespace ISI_TP02_Forms
             // Oculta o Form1 (se você não quiser fechá-lo completamente)
             this.Hide();
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância de Form2
+            Form3Utente form3 = new Form3Utente();
+
+            // Exibe o Form2
+            form3.Show();
+
+            // Oculta o Form1 (se você não quiser fechá-lo completamente)
+            this.Hide();
+
+        }
     }
 }
