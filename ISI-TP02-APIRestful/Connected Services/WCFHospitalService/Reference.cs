@@ -128,9 +128,7 @@ namespace WCFHospitalService
         
         private WCFHospitalService.Funcionario FuncionarioField;
         
-        private int FuncionarioIdField;
-        
-        private System.TimeSpan HoraField;
+        private int FuncionárioIdField;
         
         private WCFHospitalService.Hospital HospitalField;
         
@@ -186,28 +184,15 @@ namespace WCFHospitalService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int FuncionarioId
+        public int FuncionárioId
         {
             get
             {
-                return this.FuncionarioIdField;
+                return this.FuncionárioIdField;
             }
             set
             {
-                this.FuncionarioIdField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.TimeSpan Hora
-        {
-            get
-            {
-                return this.HoraField;
-            }
-            set
-            {
-                this.HoraField = value;
+                this.FuncionárioIdField = value;
             }
         }
         

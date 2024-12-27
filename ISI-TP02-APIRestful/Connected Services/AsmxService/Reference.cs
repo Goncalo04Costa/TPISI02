@@ -223,13 +223,6 @@ namespace AsmxService
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TimeSpan", Namespace="http://tempuri.org/")]
-    public partial class TimeSpan : object
-    {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Consulta", Namespace="http://tempuri.org/")]
     public partial class Consulta : object
     {
@@ -253,8 +246,6 @@ namespace AsmxService
         private AsmxService.Medico MedicoField;
         
         private System.DateTime DataField;
-        
-        private AsmxService.TimeSpan HoraField;
         
         private string DescricaoField;
         
@@ -388,20 +379,7 @@ namespace AsmxService
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false, Order=10)]
-        public AsmxService.TimeSpan Hora
-        {
-            get
-            {
-                return this.HoraField;
-            }
-            set
-            {
-                this.HoraField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
         public string Descricao
         {
             get
@@ -1282,23 +1260,19 @@ namespace AsmxService
         public System.DateTime data;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public AsmxService.TimeSpan hora;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
         public string descricao;
         
         public CreateConsultaRequestBody()
         {
         }
         
-        public CreateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        public CreateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, string descricao)
         {
             this.utenteId = utenteId;
             this.funcionarioId = funcionarioId;
             this.hospitalId = hospitalId;
             this.medicoId = medicoId;
             this.data = data;
-            this.hora = hora;
             this.descricao = descricao;
         }
     }
@@ -1458,23 +1432,19 @@ namespace AsmxService
         public System.DateTime data;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
-        public AsmxService.TimeSpan hora;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
         public string descricao;
         
         public UpdateConsultaRequestBody()
         {
         }
         
-        public UpdateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        public UpdateConsultaRequestBody(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, string descricao)
         {
             this.utenteId = utenteId;
             this.funcionarioId = funcionarioId;
             this.hospitalId = hospitalId;
             this.medicoId = medicoId;
             this.data = data;
-            this.hora = hora;
             this.descricao = descricao;
         }
     }
@@ -2017,7 +1987,7 @@ namespace AsmxService
             return base.Channel.CreateConsultaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<AsmxService.CreateConsultaResponse> CreateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        public System.Threading.Tasks.Task<AsmxService.CreateConsultaResponse> CreateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, string descricao)
         {
             AsmxService.CreateConsultaRequest inValue = new AsmxService.CreateConsultaRequest();
             inValue.Body = new AsmxService.CreateConsultaRequestBody();
@@ -2026,7 +1996,6 @@ namespace AsmxService
             inValue.Body.hospitalId = hospitalId;
             inValue.Body.medicoId = medicoId;
             inValue.Body.data = data;
-            inValue.Body.hora = hora;
             inValue.Body.descricao = descricao;
             return ((AsmxService.HospitalServiceSoap)(this)).CreateConsultaAsync(inValue);
         }
@@ -2055,7 +2024,7 @@ namespace AsmxService
             return base.Channel.UpdateConsultaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<AsmxService.UpdateConsultaResponse> UpdateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, AsmxService.TimeSpan hora, string descricao)
+        public System.Threading.Tasks.Task<AsmxService.UpdateConsultaResponse> UpdateConsultaAsync(int utenteId, int funcionarioId, int hospitalId, int medicoId, System.DateTime data, string descricao)
         {
             AsmxService.UpdateConsultaRequest inValue = new AsmxService.UpdateConsultaRequest();
             inValue.Body = new AsmxService.UpdateConsultaRequestBody();
@@ -2064,7 +2033,6 @@ namespace AsmxService
             inValue.Body.hospitalId = hospitalId;
             inValue.Body.medicoId = medicoId;
             inValue.Body.data = data;
-            inValue.Body.hora = hora;
             inValue.Body.descricao = descricao;
             return ((AsmxService.HospitalServiceSoap)(this)).UpdateConsultaAsync(inValue);
         }

@@ -390,15 +390,15 @@ namespace ISI_TP02_ASMX
             }
         }
         [WebMethod]
-        public bool CreateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao)
+        public bool CreateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data, string descricao)
         {
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"INSERT INTO Consulta (Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao) 
-                                 VALUES (@Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @hora, @descricao)";
+                    string query = @"INSERT INTO Consulta (Utenteid, Funcionárioid, Hospitalid, Medicoid, data, descricao) 
+                                 VALUES (@Utenteid, @Funcionárioid, @Hospitalid, @Medicoid, @data, @descricao)";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -407,7 +407,6 @@ namespace ISI_TP02_ASMX
                         command.Parameters.AddWithValue("@Hospitalid", hospitalId);
                         command.Parameters.AddWithValue("@Medicoid", medicoId);
                         command.Parameters.AddWithValue("@data", data);
-                        command.Parameters.AddWithValue("@hora", hora);
                         command.Parameters.AddWithValue("@descricao", descricao);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -430,7 +429,7 @@ namespace ISI_TP02_ASMX
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT Id, Utenteid, Funcionárioid, Hospitalid, Medicoid, Data, Hora, Descricao FROM Consulta";
+                    string query = "SELECT Id, Utenteid, Funcionárioid, Hospitalid, Medicoid, Data, Descricao FROM Consulta";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -445,7 +444,6 @@ namespace ISI_TP02_ASMX
                                 HospitalId = reader.GetInt32(3),
                                 MedicoId = reader.GetInt32(4),
                                 Data = reader.GetDateTime(5),
-                                Hora = reader.IsDBNull(6) ? TimeSpan.Zero : reader.GetDateTime(6).TimeOfDay,
                                 Descricao = reader.GetString(7)
                             });
                         }
@@ -485,14 +483,14 @@ namespace ISI_TP02_ASMX
         }
 
         [WebMethod]
-        public bool UpdateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data, TimeSpan hora, string descricao)
+        public bool UpdateConsulta(int utenteId, int funcionarioId, int hospitalId, int medicoId, DateTime data,  string descricao)
         {
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "UPDATE Consulta SET FuncionarioId = @FuncionarioId, HospitalId = @HospitalId, MedicoId = @MedicoId, Data = @Data, Hora = @Hora, Descricao = @Descricao WHERE UtenteId = @UtenteId";
+                    string query = "UPDATE Consulta SET FuncionarioId = @FuncionarioId, HospitalId = @HospitalId, MedicoId = @MedicoId, Data = @Data,  Descricao = @Descricao WHERE UtenteId = @UtenteId";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -501,7 +499,6 @@ namespace ISI_TP02_ASMX
                         command.Parameters.AddWithValue("@HospitalId", hospitalId);
                         command.Parameters.AddWithValue("@MedicoId", medicoId);
                         command.Parameters.AddWithValue("@Data", data);
-                        command.Parameters.AddWithValue("@Hora", hora);
                         command.Parameters.AddWithValue("@Descricao", descricao);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -541,7 +538,6 @@ namespace ISI_TP02_ASMX
                                     HospitalId = (int)reader["Hospitalid"],
                                     MedicoId = (int)reader["Medicoid"],
                                     Data = (DateTime)reader["data"],
-                                    Hora = (TimeSpan)reader["hora"],
                                     Descricao = reader["descricao"].ToString()
                                 });
                             }
@@ -565,7 +561,7 @@ namespace ISI_TP02_ASMX
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data,  descricao 
                                  FROM Consulta 
                                  WHERE Utenteid = @Utenteid";
 
@@ -585,7 +581,6 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Hora = reader.GetTimeSpan(6),
                                     Descricao = reader.GetString(7)
                                 });
                             }
@@ -609,7 +604,7 @@ namespace ISI_TP02_ASMX
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data,  descricao 
                                  FROM Consulta 
                                  WHERE Funcionárioid = @Funcionárioid";
 
@@ -629,7 +624,6 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Hora = reader.GetTimeSpan(6),
                                     Descricao = reader.GetString(7)
                                 });
                             }
@@ -652,7 +646,7 @@ namespace ISI_TP02_ASMX
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, hora, descricao 
+                    string query = @"SELECT id, Utenteid, Funcionárioid, Hospitalid, Medicoid, data, descricao 
                                  FROM Consulta 
                                  WHERE id = @id";
 
@@ -672,7 +666,6 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Hora = reader.GetTimeSpan(6),
                                     Descricao = reader.GetString(7)
                                 };
                             }

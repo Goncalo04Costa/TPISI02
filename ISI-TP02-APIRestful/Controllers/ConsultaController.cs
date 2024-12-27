@@ -67,7 +67,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 return BadRequest("Os dados da consulta são obrigatórios.");
 
             // Validação básica dos campos necessários
-            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
+            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default )
                 return BadRequest("Dados da consulta inválidos.");
 
             try
@@ -79,7 +79,6 @@ namespace ISI_TP02_APIRestful.Controllers
                     consulta.HospitalId,
                     consulta.MedicoId,
                     consulta.Data,
-                    consulta.Hora,
                     consulta.Descricao
                 );
 
@@ -101,7 +100,7 @@ namespace ISI_TP02_APIRestful.Controllers
                 return BadRequest("Os dados da consulta são obrigatórios.");
 
             // Validação básica dos campos necessários
-            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default || consulta.Hora == default)
+            if (consulta.UtenteId <= 0 || consulta.FuncionárioId <= 0 || consulta.HospitalId <= 0 || consulta.MedicoId <= 0 || consulta.Data == default)
                 return BadRequest("Dados da consulta inválidos.");
 
             try
@@ -113,7 +112,6 @@ namespace ISI_TP02_APIRestful.Controllers
                     consulta.HospitalId,
                     consulta.MedicoId,
                     consulta.Data,
-                    consulta.Hora,
                     consulta.Descricao
                 );
 

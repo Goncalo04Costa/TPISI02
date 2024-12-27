@@ -15,7 +15,6 @@ namespace ISITP02.Models
         public int MedicoId { get; set; } 
         public Medico Medico { get; set; } 
         public DateTime Data { get; set; }
-        public TimeSpan Hora { get; set; }
         public string Descricao { get; set; }
     }
 }

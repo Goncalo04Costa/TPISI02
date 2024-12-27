@@ -24,8 +24,6 @@ namespace ISITP02.Models
         [XmlElement("Data")]
         public DateTime Data { get; set; }
 
-        [XmlElement("Hora")]
-        public TimeSpan Hora { get; set; }
 
         [XmlElement("Descricao")]
         public string Descricao { get; set; }
