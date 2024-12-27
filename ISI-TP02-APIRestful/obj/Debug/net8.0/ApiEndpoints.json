@@ -132,6 +132,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ISI_TP02_APIRestful.Controllers.HospitalController",
+    "Method": "delete",
+    "RelativePath": "api/Hospital/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ISI_TP02_APIRestful.Controllers.UtenteController",
     "Method": "Create",
     "RelativePath": "api/Utente/create",

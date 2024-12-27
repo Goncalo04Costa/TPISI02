@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "qIZif04wDmFgPsf0lH3vIByuvbUOsUkYwj071EjAkyY=",
+  "Hash": "r6ZCsADYX8001zP7pE+TvMQ2PwbtSdlZVg85bosJ7hc=",
   "Source": "ISI-TP02-APIRestful",
   "BasePath": "_content/ISI-TP02-APIRestful",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

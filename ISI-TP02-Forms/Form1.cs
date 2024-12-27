@@ -57,7 +57,7 @@ namespace ISI_TP02_Forms
             dataGridView1.DataSource = list;
         }
 
-        private async void button4_Click(object sender, EventArgs e) //adicionar funcinario
+        private void button4_Click(object sender, EventArgs e) //adicionar funcinario
         {
             // Cria uma instância de Form2
             Form2Funcionario form2 = new Form2Funcionario();
