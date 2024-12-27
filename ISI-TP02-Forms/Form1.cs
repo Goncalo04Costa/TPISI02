@@ -81,5 +81,10 @@ namespace ISI_TP02_Forms
             this.Hide();
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

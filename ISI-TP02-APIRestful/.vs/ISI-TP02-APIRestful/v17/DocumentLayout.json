@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\",
+  "WorkspaceRootPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:controllers\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\isi-tp02-apirestful.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\isi-tp02-apirestful.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:isi-tp02-apirestful.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:connected services\\wcfhospitalservice\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\isi-tp02-apirestful\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-apirestful\\controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F9DAE2-995D-4D6D-925D-375BDA67A469}|ISI-TP02-APIRestful.csproj|solutionrelative:controllers\\utentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -52,9 +52,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ISI-TP02-APIRestful.csproj",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
               "RelativeDocumentMoniker": "ISI-TP02-APIRestful.csproj",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\ISI-TP02-APIRestful.csproj",
               "RelativeToolTip": "ISI-TP02-APIRestful.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -64,9 +64,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FuncionarioController.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\FuncionarioController.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\FuncionarioController.cs",
               "RelativeToolTip": "Controllers\\FuncionarioController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -76,9 +76,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Reference.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\WCFHospitalService\\Reference.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\WCFHospitalService\\Reference.cs",
               "RelativeDocumentMoniker": "Connected Services\\WCFHospitalService\\Reference.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\WCFHospitalService\\Reference.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Connected Services\\WCFHospitalService\\Reference.cs",
               "RelativeToolTip": "Connected Services\\WCFHospitalService\\Reference.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +88,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ConsultaController.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
               "RelativeDocumentMoniker": "Controllers\\ConsultaController.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\ConsultaController.cs",
               "RelativeToolTip": "Controllers\\ConsultaController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwHwAAAAgAAAAAAAAAA==",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T10:43:03.8Z",
               "EditorCaption": ""
@@ -101,9 +101,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Consulta.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
               "RelativeDocumentMoniker": "Models\\Consulta.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Models\\Consulta.cs",
               "RelativeToolTip": "Models\\Consulta.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAcwA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,9 +113,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UtenteController.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
               "RelativeDocumentMoniker": "Controllers\\UtenteController.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-APIRestful\\Controllers\\UtenteController.cs",
               "RelativeToolTip": "Controllers\\UtenteController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAkwBUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
