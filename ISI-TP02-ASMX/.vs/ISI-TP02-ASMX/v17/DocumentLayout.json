@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{A2A66C49-00C0-405D-8A5A-7127FAFD372E}|ISI-TP02-ASMX.csproj|solutionrelative:services\\hospitalservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A66C49-00C0-405D-8A5A-7127FAFD372E}|ISI-TP02-ASMX.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-asmx\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2A66C49-00C0-405D-8A5A-7127FAFD372E}|ISI-TP02-ASMX.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-ASMX\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2A66C49-00C0-405D-8A5A-7127FAFD372E}|ISI-TP02-ASMX.csproj|solutionrelative:models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Models\\Consulta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T02:02:30.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T02:02:30.74Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "Services\\HospitalService.asmx.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-ASMX\\Services\\HospitalService.asmx.cs",
               "RelativeToolTip": "Services\\HospitalService.asmx.cs",
-              "ViewState": "AQIAAKIBAAAAAAAAAADwv6sBAAAMAAAA",
+              "ViewState": "AQIAAKIBAAAAAAAAAAAAAKIBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T02:00:23.117Z",
               "EditorCaption": ""

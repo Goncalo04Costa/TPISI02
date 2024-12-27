@@ -84,6 +84,12 @@ namespace ISI_TP02_Forms
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Form4Consulta form4Consulta = new Form4Consulta();
+
+            form4Consulta.Show(); 
+            
+            this.Hide();
+
 
         }
     }
