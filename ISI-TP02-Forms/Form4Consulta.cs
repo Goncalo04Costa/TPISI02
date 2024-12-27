@@ -47,7 +47,6 @@ namespace ISI_TP02_Forms
                 HospitalId = int.Parse(textBox3.Text),
                 MedicoId = int.Parse(textBox4.Text),
                 Data = DateTime.Parse(textBox5.Text),
-                Hora = DateTime.Parse(textBox6.Text),
                 Descricao = textBox7.Text,
 
             };

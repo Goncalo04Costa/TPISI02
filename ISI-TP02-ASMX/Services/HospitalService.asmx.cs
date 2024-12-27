@@ -423,7 +423,7 @@ namespace ISI_TP02_ASMX
         [WebMethod]
         public List<Consulta> GetAllConsultas()
         {
-            List<Consulta> consultas = new List<Consulta>();
+           List<Consulta> consultas = new List<Consulta>();
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -432,29 +432,29 @@ namespace ISI_TP02_ASMX
                     string query = "SELECT Id, Utenteid, Funcionárioid, Hospitalid, Medicoid, Data, Descricao FROM Consulta";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        { 
-                            consultas.Add(new Consulta   //..
+                    using (SqlDataReader reader = command.ExecuteReader()) 
+                        {
+                            while (reader.Read())
                             {
-                                Id = reader.GetInt32(0),
-                                UtenteId = reader.GetInt32(1),
-                                FuncionárioId = reader.GetInt32(2),
-                                HospitalId = reader.GetInt32(3),
-                                MedicoId = reader.GetInt32(4),
-                                Data = reader.GetDateTime(5),
-                                Descricao = reader.GetString(7)
-                            });
+                                consultas.Add(new Consulta   //..
+                                {
+                                    Id = reader.GetInt32(0),
+                                    UtenteId = reader.GetInt32(1),
+                                    FuncionárioId = reader.GetInt32(2),
+                                    HospitalId = reader.GetInt32(3),
+                                    MedicoId = reader.GetInt32(4),
+                                    Data = reader.GetDateTime(5),
+                                    Descricao = reader.GetString(6)
+                                });
+                            }
                         }
-                    }
                 }
             }
             catch (Exception ex)
             {
                 throw new ApplicationException("Erro a pesquisar consultas", ex);
             }
-            return consultas;
+            return  consultas;
         }
 
         [WebMethod]
@@ -581,7 +581,7 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Descricao = reader.GetString(7)
+                                    Descricao = reader.GetString(6)
                                 });
                             }
                         }
@@ -624,7 +624,7 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Descricao = reader.GetString(7)
+                                    Descricao = reader.GetString(6)
                                 });
                             }
                         }
@@ -666,7 +666,7 @@ namespace ISI_TP02_ASMX
                                     HospitalId = reader.GetInt32(3),
                                     MedicoId = reader.GetInt32(4),
                                     Data = reader.GetDateTime(5),
-                                    Descricao = reader.GetString(7)
+                                    Descricao = reader.GetString(6)
                                 };
                             }
                         }

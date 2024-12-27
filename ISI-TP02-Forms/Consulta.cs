@@ -29,10 +29,7 @@ namespace ISI_TP02_Forms
 
         public DateTime Data { get; set; }
 
-        [JsonPropertyName("hora")]
-
-        public DateTime Hora { get; set; }
-
+     
         [JsonPropertyName("descricao")]
 
         public string Descricao { get; set; }
