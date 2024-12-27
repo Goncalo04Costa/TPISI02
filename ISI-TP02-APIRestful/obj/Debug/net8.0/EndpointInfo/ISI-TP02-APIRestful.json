@@ -388,9 +388,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "hora": {
-            "$ref": "#/components/schemas/TimeSpan"
-          },
           "descricao": {
             "type": "string",
             "nullable": true
@@ -480,10 +477,6 @@
             "format": "int32"
           }
         },
-        "additionalProperties": false
-      },
-      "TimeSpan": {
-        "type": "object",
         "additionalProperties": false
       },
       "Utente": {

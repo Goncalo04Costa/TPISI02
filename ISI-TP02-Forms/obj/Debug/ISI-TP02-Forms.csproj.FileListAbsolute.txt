@@ -62,3 +62,4 @@ C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.Text.Jso
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.ValueTuple.xml
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-TP02.FF252DF2.Up2Date
+C:\Users\harum\OneDrive\Área de Trabalho\TPISI02\ISI-TP02-Forms\obj\Debug\ISI_TP02_Forms.Login.resources
