@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,20 +11,24 @@
       "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|c:\\users\\gonca\\documents\\github\\tpisi02\\isi-tp02-forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form2funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form2funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form4consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form3utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form3utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\form2funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B58528-F7DC-4830-9F47-FCA5720A7047}|ISI-TP02-Forms.csproj|solutionrelative:form2funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -88,80 +88,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T12:31:07.82Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T14:21:13.02Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form3Utente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
-              "RelativeDocumentMoniker": "Form3Utente.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs [Design]",
-              "RelativeToolTip": "Form3Utente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T01:10:25.882Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form3Utente.cs",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
-              "RelativeDocumentMoniker": "Form3Utente.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
-              "RelativeToolTip": "Form3Utente.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T01:11:04.928Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form4Consulta.cs",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.cs",
-              "RelativeDocumentMoniker": "Form4Consulta.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.cs",
-              "RelativeToolTip": "Form4Consulta.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwD4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T00:53:24.866Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Form2Funcionario.cs",
-              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form2Funcionario.cs",
-              "RelativeDocumentMoniker": "Form2Funcionario.cs",
-              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form2Funcionario.cs",
-              "RelativeToolTip": "Form2Funcionario.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T01:06:24.051Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -176,13 +102,90 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAawBQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:31:07.82Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T14:21:13.02Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form3Utente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
+              "RelativeDocumentMoniker": "Form3Utente.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs [Design]",
+              "RelativeToolTip": "Form3Utente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T01:10:25.882Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form3Utente.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
+              "RelativeDocumentMoniker": "Form3Utente.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form3Utente.cs",
+              "RelativeToolTip": "Form3Utente.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T01:11:04.928Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form4Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.cs",
+              "RelativeDocumentMoniker": "Form4Consulta.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.cs",
+              "RelativeToolTip": "Form4Consulta.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwD4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T00:53:24.866Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form2Funcionario.cs",
+              "RelativeDocumentMoniker": "Form2Funcionario.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form2Funcionario.cs",
+              "RelativeToolTip": "Form2Funcionario.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAhwDQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T01:06:24.051Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBUAAAAOAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T01:06:30.149Z",
               "EditorCaption": ""
@@ -201,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -209,11 +212,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T01:20:16.005Z"
+              "WhenOpened": "2024-12-27T01:20:16.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Consulta.cs",
               "RelativeDocumentMoniker": "Consulta.cs",
@@ -221,11 +225,12 @@
               "RelativeToolTip": "Consulta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T00:58:12.431Z"
+              "WhenOpened": "2024-12-27T00:58:12.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form4Consulta.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.cs",
               "RelativeDocumentMoniker": "Form4Consulta.cs",
@@ -236,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Metodos.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Metodos.cs",
               "RelativeDocumentMoniker": "Metodos.cs",
@@ -248,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LogRequest.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\LogRequest.cs",
               "RelativeDocumentMoniker": "LogRequest.cs",
@@ -260,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Utente.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Utente.cs",
               "RelativeDocumentMoniker": "Utente.cs",
@@ -272,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Login.Designer.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Login.Designer.cs",
               "RelativeDocumentMoniker": "Login.Designer.cs",
@@ -280,11 +285,12 @@
               "RelativeToolTip": "Login.Designer.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAYwFUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T01:08:37.976Z"
+              "WhenOpened": "2024-12-28T01:08:37.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Funcionario.cs",
               "RelativeDocumentMoniker": "Funcionario.cs",
@@ -296,18 +302,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Login.resx",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Login.resx",
               "RelativeDocumentMoniker": "Login.resx",
               "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Login.resx",
               "RelativeToolTip": "Login.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-28T01:09:23.088Z"
+              "WhenOpened": "2024-12-28T01:09:23.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Form2Funcionario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form2Funcionario.cs",
               "RelativeDocumentMoniker": "Form2Funcionario.cs",
@@ -318,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Form4Consulta.Designer.cs",
               "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\ISI-TP02-Forms\\Form4Consulta.Designer.cs",
               "RelativeDocumentMoniker": "Form4Consulta.Designer.cs",

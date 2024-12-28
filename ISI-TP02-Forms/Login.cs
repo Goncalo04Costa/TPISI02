@@ -19,8 +19,7 @@ namespace ISI_TP02_Forms
         public Login()
         {
             InitializeComponent();
-            //httpClient.BaseAddress = new Uri("https://gestaohospitalar-eyere9hbc9ehgqdw.ukwest-01.azurewebsites.net/");
-            httpClient.BaseAddress = new Uri("https://localhost:7275/");
+               httpClient.BaseAddress = new Uri("https://gestaohospitalar-eyere9hbc9ehgqdw.ukwest-01.azurewebsites.net/");
         }
 
         private async void buttonLogin_Click(object sender, EventArgs e)
