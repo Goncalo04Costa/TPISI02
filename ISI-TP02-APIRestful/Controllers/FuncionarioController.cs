@@ -22,6 +22,17 @@ namespace ISI_TP02_APIRestful.Controllers
             //var endpointAddress = new EndpointAddress("https://localhost:44347/Services/HospitalService.asmx");
             var endpointAddress = new EndpointAddress("https://tpisi-asmx-d4bxgafdhpahbdgx.westeurope-01.azurewebsites.net/Services/HospitalService.asmx");
             asmxClient = new HospitalServiceSoapClient(HospitalServiceSoapClient.EndpointConfiguration.HospitalServiceSoap, endpointAddress);
+
+            var endpointAddressWCF = new EndpointAddress("https://tp-isi-wcf-hucgdwgrggdxfbes.westeurope-01.azurewebsites.net/Service.svc");
+            
+            var binding = new BasicHttpBinding
+            {
+                Security = new BasicHttpSecurity
+                {
+                    Mode = BasicHttpSecurityMode.Transport,
+                }
+            };
+            WCFcliente = new HospitalServiceClient(binding, endpointAddressWCF);
         }
         [HttpGet("obter")]
         public async Task<IActionResult> Obter()
