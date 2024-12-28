@@ -29,6 +29,8 @@ namespace ISI_TP02_Forms
 
         [JsonPropertyName("tipoFuncionárioId")]
         public int TipoFuncionárioId { get; set; }
+        [JsonPropertyName("jwt")]
+        public string Jwt { get; set; }
 
     }
 }

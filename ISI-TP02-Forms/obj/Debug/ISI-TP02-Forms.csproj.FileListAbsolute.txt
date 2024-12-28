@@ -62,3 +62,16 @@ C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.Text.Jso
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.ValueTuple.xml
 C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\obj\Debug\ISI-TP02.FF252DF2.Up2Date
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\obj\Debug\ISI_TP02_Forms.Login.resources
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\gonca\Documents\GitHub\TPISI02\ISI-TP02-Forms\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
