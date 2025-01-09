@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllFuncionarios">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllFuncionariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllFuncionariosResult" type="tns:ArrayOfFuncionario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFuncionario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Funcionario" nillable="true" type="tns:Funcionario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Funcionario">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NIF" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataEntrada" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contacto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoFuncionárioid" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFuncionarioById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFuncionarioByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFuncionarioByIdResult" type="tns:Funcionario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="funcionario" type="tns:Funcionario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateFuncionarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="funcionario" type="tns:Funcionario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateFuncionarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteFuncionarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllUtentes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUtentesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUtentesResult" type="tns:ArrayOfUtente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUtente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Utente" nillable="true" type="tns:Utente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Utente">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NIF" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataEntrada" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoUtenteId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HospitalId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUtenteById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUtenteByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUtenteByIdResult" type="tns:Utente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUtente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIF" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dataEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipoUtenteId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hospitalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUtenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUtenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUtente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nif" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dataEntrada" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipoUtenteId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hospitalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUtenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUtenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUtente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUtenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUtenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateConsulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="utenteId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="funcionarioId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hospitalId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="medicoId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="data" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="descricao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateConsultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateConsultaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllConsultas">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllConsultasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllConsultasResult" type="tns:ArrayOfConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConsulta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Consulta" nillable="true" type="tns:Consulta" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Consulta">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UtenteId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Utente" type="tns:Utente" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncionárioId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Funcionario" type="tns:Funcionario" />
+          <s:element minOccurs="1" maxOccurs="1" name="HospitalId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hospital" type="tns:Hospital" />
+          <s:element minOccurs="1" maxOccurs="1" name="MedicoId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Medico" type="tns:Medico" />
+          <s:element minOccurs="1" maxOccurs="1" name="Data" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Hospital">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Localizacao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Medico">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoMedicoId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DeleteConsulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteConsultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteConsultaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateConsulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="utenteId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="funcionarioId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hospitalId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="medicoId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="data" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="descricao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateConsultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateConsultaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByHospital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hospitalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByHospitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaByHospitalResult" type="tns:ArrayOfConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByUtente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="utenteId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByUtenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaByUtenteResult" type="tns:ArrayOfConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByFuncionario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="funcionarioId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByFuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaByFuncionarioResult" type="tns:ArrayOfConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaByIdResult" type="tns:Consulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllFuncionariosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllFuncionarios" />
+  </wsdl:message>
+  <wsdl:message name="GetAllFuncionariosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllFuncionariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFuncionarioByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFuncionarioById" />
+  </wsdl:message>
+  <wsdl:message name="GetFuncionarioByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFuncionarioByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="CreateFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUtentesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUtentes" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUtentesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUtentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUtenteByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUtenteById" />
+  </wsdl:message>
+  <wsdl:message name="GetUtenteByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUtenteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUtenteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUtente" />
+  </wsdl:message>
+  <wsdl:message name="CreateUtenteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUtenteSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUtente" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUtenteSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUtenteSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUtente" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUtenteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateConsultaSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateConsulta" />
+  </wsdl:message>
+  <wsdl:message name="CreateConsultaSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllConsultasSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllConsultas" />
+  </wsdl:message>
+  <wsdl:message name="GetAllConsultasSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllConsultasResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteConsultaSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteConsulta" />
+  </wsdl:message>
+  <wsdl:message name="DeleteConsultaSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateConsultaSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateConsulta" />
+  </wsdl:message>
+  <wsdl:message name="UpdateConsultaSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByHospitalSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaByHospital" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByHospitalSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaByHospitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByUtenteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaByUtente" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByUtenteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaByUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByFuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaByFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByFuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaByFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaById" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HospitalServiceSoap">
+    <wsdl:operation name="GetAllFuncionarios">
+      <wsdl:input message="tns:GetAllFuncionariosSoapIn" />
+      <wsdl:output message="tns:GetAllFuncionariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuncionarioById">
+      <wsdl:input message="tns:GetFuncionarioByIdSoapIn" />
+      <wsdl:output message="tns:GetFuncionarioByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFuncionario">
+      <wsdl:input message="tns:CreateFuncionarioSoapIn" />
+      <wsdl:output message="tns:CreateFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncionario">
+      <wsdl:input message="tns:UpdateFuncionarioSoapIn" />
+      <wsdl:output message="tns:UpdateFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncionario">
+      <wsdl:input message="tns:DeleteFuncionarioSoapIn" />
+      <wsdl:output message="tns:DeleteFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUtentes">
+      <wsdl:input message="tns:GetAllUtentesSoapIn" />
+      <wsdl:output message="tns:GetAllUtentesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUtenteById">
+      <wsdl:input message="tns:GetUtenteByIdSoapIn" />
+      <wsdl:output message="tns:GetUtenteByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUtente">
+      <wsdl:input message="tns:CreateUtenteSoapIn" />
+      <wsdl:output message="tns:CreateUtenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUtente">
+      <wsdl:input message="tns:UpdateUtenteSoapIn" />
+      <wsdl:output message="tns:UpdateUtenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUtente">
+      <wsdl:input message="tns:DeleteUtenteSoapIn" />
+      <wsdl:output message="tns:DeleteUtenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsulta">
+      <wsdl:input message="tns:CreateConsultaSoapIn" />
+      <wsdl:output message="tns:CreateConsultaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConsultas">
+      <wsdl:input message="tns:GetAllConsultasSoapIn" />
+      <wsdl:output message="tns:GetAllConsultasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsulta">
+      <wsdl:input message="tns:DeleteConsultaSoapIn" />
+      <wsdl:output message="tns:DeleteConsultaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsulta">
+      <wsdl:input message="tns:UpdateConsultaSoapIn" />
+      <wsdl:output message="tns:UpdateConsultaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByHospital">
+      <wsdl:input message="tns:ConsultaByHospitalSoapIn" />
+      <wsdl:output message="tns:ConsultaByHospitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByUtente">
+      <wsdl:input message="tns:ConsultaByUtenteSoapIn" />
+      <wsdl:output message="tns:ConsultaByUtenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByFuncionario">
+      <wsdl:input message="tns:ConsultaByFuncionarioSoapIn" />
+      <wsdl:output message="tns:ConsultaByFuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaById">
+      <wsdl:input message="tns:ConsultaByIdSoapIn" />
+      <wsdl:output message="tns:ConsultaByIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HospitalServiceSoap" type="tns:HospitalServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllFuncionarios">
+      <soap:operation soapAction="http://tempuri.org/GetAllFuncionarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuncionarioById">
+      <soap:operation soapAction="http://tempuri.org/GetFuncionarioById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFuncionario">
+      <soap:operation soapAction="http://tempuri.org/CreateFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncionario">
+      <soap:operation soapAction="http://tempuri.org/UpdateFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncionario">
+      <soap:operation soapAction="http://tempuri.org/DeleteFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUtentes">
+      <soap:operation soapAction="http://tempuri.org/GetAllUtentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUtenteById">
+      <soap:operation soapAction="http://tempuri.org/GetUtenteById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUtente">
+      <soap:operation soapAction="http://tempuri.org/CreateUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUtente">
+      <soap:operation soapAction="http://tempuri.org/UpdateUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUtente">
+      <soap:operation soapAction="http://tempuri.org/DeleteUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsulta">
+      <soap:operation soapAction="http://tempuri.org/CreateConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConsultas">
+      <soap:operation soapAction="http://tempuri.org/GetAllConsultas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsulta">
+      <soap:operation soapAction="http://tempuri.org/DeleteConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsulta">
+      <soap:operation soapAction="http://tempuri.org/UpdateConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByHospital">
+      <soap:operation soapAction="http://tempuri.org/ConsultaByHospital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByUtente">
+      <soap:operation soapAction="http://tempuri.org/ConsultaByUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByFuncionario">
+      <soap:operation soapAction="http://tempuri.org/ConsultaByFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaById">
+      <soap:operation soapAction="http://tempuri.org/ConsultaById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HospitalServiceSoap12" type="tns:HospitalServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllFuncionarios">
+      <soap12:operation soapAction="http://tempuri.org/GetAllFuncionarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuncionarioById">
+      <soap12:operation soapAction="http://tempuri.org/GetFuncionarioById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/CreateFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/DeleteFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUtentes">
+      <soap12:operation soapAction="http://tempuri.org/GetAllUtentes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUtenteById">
+      <soap12:operation soapAction="http://tempuri.org/GetUtenteById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUtente">
+      <soap12:operation soapAction="http://tempuri.org/CreateUtente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUtente">
+      <soap12:operation soapAction="http://tempuri.org/UpdateUtente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUtente">
+      <soap12:operation soapAction="http://tempuri.org/DeleteUtente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsulta">
+      <soap12:operation soapAction="http://tempuri.org/CreateConsulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConsultas">
+      <soap12:operation soapAction="http://tempuri.org/GetAllConsultas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsulta">
+      <soap12:operation soapAction="http://tempuri.org/DeleteConsulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsulta">
+      <soap12:operation soapAction="http://tempuri.org/UpdateConsulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByHospital">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaByHospital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByUtente">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaByUtente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaByFuncionario">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaByFuncionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaById">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HospitalService">
+    <wsdl:port name="HospitalServiceSoap" binding="tns:HospitalServiceSoap">
+      <soap:address location="https://localhost:44347/Services/HospitalService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HospitalServiceSoap12" binding="tns:HospitalServiceSoap12">
+      <soap12:address location="https://localhost:44347/Services/HospitalService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

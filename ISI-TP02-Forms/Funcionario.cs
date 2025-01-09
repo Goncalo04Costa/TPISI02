@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
 namespace ISI_TP02_Forms
 {
     internal class Funcionario

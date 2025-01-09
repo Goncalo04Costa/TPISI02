@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ISI-TP02-APIRestful.props" />
+</Project>

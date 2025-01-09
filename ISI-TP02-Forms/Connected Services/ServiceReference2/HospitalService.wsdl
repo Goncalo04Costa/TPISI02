@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="HospitalService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57645/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57645/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57645/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ISITP02.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHospitalService_CreateMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMedico" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_CreateMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetAllMedicos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMedicos" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetAllMedicos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMedicosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetMedicoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedicoById" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetMedicoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedicoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_UpdateMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMedico" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_UpdateMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_DeleteMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMedico" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_DeleteMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_CreateTipoMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTipoMedico" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_CreateTipoMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTipoMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_DeleteTipoMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTipoMedico" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_DeleteTipoMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTipoMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_CreateHospital_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHospital" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_CreateHospital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHospitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GETALLHOSPITAIS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GETALLHOSPITAIS" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GETALLHOSPITAIS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GETALLHOSPITAISResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetHospitalByLoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHospitalByLoc" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_GetHospitalByLoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHospitalByLocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_AutenticarUtilizador_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarUtilizador" />
+  </wsdl:message>
+  <wsdl:message name="IHospitalService_AutenticarUtilizador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarUtilizadorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHospitalService">
+    <wsdl:operation name="CreateMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/CreateMedico" message="tns:IHospitalService_CreateMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/CreateMedicoResponse" message="tns:IHospitalService_CreateMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMedicos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/GetAllMedicos" message="tns:IHospitalService_GetAllMedicos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/GetAllMedicosResponse" message="tns:IHospitalService_GetAllMedicos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedicoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/GetMedicoById" message="tns:IHospitalService_GetMedicoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/GetMedicoByIdResponse" message="tns:IHospitalService_GetMedicoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/UpdateMedico" message="tns:IHospitalService_UpdateMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/UpdateMedicoResponse" message="tns:IHospitalService_UpdateMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/DeleteMedico" message="tns:IHospitalService_DeleteMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/DeleteMedicoResponse" message="tns:IHospitalService_DeleteMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTipoMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/CreateTipoMedico" message="tns:IHospitalService_CreateTipoMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/CreateTipoMedicoResponse" message="tns:IHospitalService_CreateTipoMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTipoMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/DeleteTipoMedico" message="tns:IHospitalService_DeleteTipoMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/DeleteTipoMedicoResponse" message="tns:IHospitalService_DeleteTipoMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateHospital">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/CreateHospital" message="tns:IHospitalService_CreateHospital_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/CreateHospitalResponse" message="tns:IHospitalService_CreateHospital_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GETALLHOSPITAIS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/GETALLHOSPITAIS" message="tns:IHospitalService_GETALLHOSPITAIS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/GETALLHOSPITAISResponse" message="tns:IHospitalService_GETALLHOSPITAIS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHospitalByLoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/GetHospitalByLoc" message="tns:IHospitalService_GetHospitalByLoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/GetHospitalByLocResponse" message="tns:IHospitalService_GetHospitalByLoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarUtilizador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHospitalService/AutenticarUtilizador" message="tns:IHospitalService_AutenticarUtilizador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHospitalService/AutenticarUtilizadorResponse" message="tns:IHospitalService_AutenticarUtilizador_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHospitalService" type="tns:IHospitalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateMedico">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/CreateMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMedicos">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/GetAllMedicos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedicoById">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/GetMedicoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMedico">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/UpdateMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMedico">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/DeleteMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTipoMedico">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/CreateTipoMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTipoMedico">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/DeleteTipoMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHospital">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/CreateHospital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GETALLHOSPITAIS">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/GETALLHOSPITAIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHospitalByLoc">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/GetHospitalByLoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarUtilizador">
+      <soap:operation soapAction="http://tempuri.org/IHospitalService/AutenticarUtilizador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HospitalService">
+    <wsdl:port name="BasicHttpBinding_IHospitalService" binding="tns:BasicHttpBinding_IHospitalService">
+      <soap:address location="http://localhost:57645/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
