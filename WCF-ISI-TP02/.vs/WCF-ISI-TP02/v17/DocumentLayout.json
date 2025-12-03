@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\",
+  "WorkspaceRootPath": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|c:\\users\\harum\\onedrive\\\u00E1rea de trabalho\\tpisi02\\wcf-isi-tp02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\models\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\models\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\hospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:app_code\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|c:\\users\\gonca\\documents\\github\\tpisi02\\wcf-isi-tp02\\service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02|solutionrelative:service.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{95DBFA16-CB4C-4E6F-B17C-FB8E4190EF68}|C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,37 +62,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Service.svc",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Service.svc",
-              "RelativeDocumentMoniker": "Service.svc",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Service.svc",
-              "RelativeToolTip": "Service.svc",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
-              "WhenOpened": "2024-12-27T02:54:02.878Z",
+              "DocumentIndex": 2,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Funcionario.cs",
+              "RelativeDocumentMoniker": "App_Code\\Models\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Funcionario.cs",
+              "RelativeToolTip": "App_Code\\Models\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:37:56.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Web.config",
-              "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Web.config",
-              "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-27T02:53:16.533Z",
+              "DocumentIndex": 3,
+              "Title": "Medico.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
+              "RelativeDocumentMoniker": "App_Code\\Models\\Medico.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Medico.cs",
+              "RelativeToolTip": "App_Code\\Models\\Medico.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:35:59.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hospital.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Hospital.cs",
+              "RelativeDocumentMoniker": "App_Code\\Models\\Hospital.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\Models\\Hospital.cs",
+              "RelativeToolTip": "App_Code\\Models\\Hospital.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:35:16.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "IHospitalService.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
+              "RelativeToolTip": "App_Code\\IHospitalService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:35:02.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HospitalService.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
+              "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
+              "RelativeToolTip": "App_Code\\HospitalService.cs",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAAALgBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:30:37.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-27T02:53:16.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IHospitalService.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
+              "RelativeDocumentMoniker": "App_Code\\IHospitalService.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\IHospitalService.cs",
               "RelativeToolTip": "App_Code\\IHospitalService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwCgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,11 +151,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HospitalService.cs",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeDocumentMoniker": "App_Code\\HospitalService.cs",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\App_Code\\HospitalService.cs",
               "RelativeToolTip": "App_Code\\HospitalService.cs",
               "ViewState": "AgIAAHUBAAAAAAAAAAAuwJ4BAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -96,14 +163,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Service.svc",
-              "DocumentMoniker": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Service.svc",
+              "DocumentMoniker": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
               "RelativeDocumentMoniker": "Service.svc",
-              "ToolTip": "C:\\Users\\harum\\OneDrive\\\u00C1rea de Trabalho\\TPISI02\\WCF-ISI-TP02\\Service.svc",
+              "ToolTip": "C:\\Users\\gonca\\Documents\\GitHub\\TPISI02\\WCF-ISI-TP02\\Service.svc",
               "RelativeToolTip": "Service.svc",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
-              "WhenOpened": "2024-12-19T11:54:15.071Z"
+              "WhenOpened": "2024-12-19T11:54:15.071Z",
+              "EditorCaption": ""
             }
           ]
         }

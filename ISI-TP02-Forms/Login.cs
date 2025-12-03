@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ISI_TP02_Forms.ServiceReference2;// Ajuste o namespace conforme necessário
+using ISI_TP02_Forms.ServiceReference2;
 
 namespace ISI_TP02_Forms
 {
